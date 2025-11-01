@@ -1,6 +1,6 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
-# layout: home
+layout: home
 
 hero:
   name: "RoBeeX Docs"
@@ -39,5 +39,3 @@ features:
     icon:
         src: https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/120px-Arduino_Logo.svg.png?20200922062315
 ---
-
-# Hell
