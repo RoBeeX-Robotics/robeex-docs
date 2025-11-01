@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "@types/node": "^24.9.2",
+    "front-matter": "^4.0.2",
+    "vitepress": "^1.6.4"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview",
+    "format": "prettier --write . && ng lint --fix"
+  },
+  "dependencies": {
+    "vite-plugin-vitepress-auto-sidebar": "^1.7.1"
+  }
+}
