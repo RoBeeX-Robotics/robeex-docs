@@ -3,7 +3,10 @@ import path from 'path';
 import { DefaultTheme } from 'vitepress/theme';
 import fm from 'front-matter';
 
-const excludeList = ['assets', 'dev', 'index.md'];
+let excludeList = ['assets', 'index.md'];
+if (process.env['NODE_ENV'] == 'production') {
+    excludeList.push('dev')
+}
 
 /**
  * Convert file or folder name into human-readable title

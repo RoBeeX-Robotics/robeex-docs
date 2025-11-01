@@ -9,10 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Get started
-      link: /manuals/ai-drone
-    - theme: alt
-      text: Read the Docs
-      link: /manuals
+      link: /user-manuals/robeex-ai-drone/first-setup/assembly
     - theme: alt
       text: API References
       link: /programming
@@ -20,7 +17,7 @@ hero:
 features:
   - title: User Manuals
     details: User Manuals
-    link: /manuals/
+    link: /user-manuals/robeex-ai-drone/first-setup
     icon: 
         src: /assets/book.png
   - title: Blockly
