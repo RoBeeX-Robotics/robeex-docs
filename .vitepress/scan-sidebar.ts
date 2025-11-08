@@ -18,7 +18,14 @@ function toTitle(name: string): string {
         .replace(/[-_]/g, ' ')
         .replace(/\.[^/.]+$/, '')
         .replace(/\b\w/g, (c) => c.toUpperCase())
-        .replace(/ai /i, 'AI ');
+        .replace(/\brobeex\b/ig, 'RoBeeX')
+        .replace(/\bai\b/ig, 'AI')
+        .replace(/\bapi\b/ig, 'API')
+        .replace(/\bled\b/ig, 'LED')
+        .replace(/\budp\b/ig, 'UDP')
+        .replace(/\brc\b/ig, 'RC')
+        .replace(/\bimu\b/ig, 'IMU')
+        .replace(/\bfaq\b/ig, 'FAQ');
 }
 
 /**
