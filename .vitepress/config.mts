@@ -37,6 +37,10 @@ export default defineConfig({
     srcDir: "src",
     appearance: 'force-dark',
     themeConfig: {
+        outline: {
+            level: 'deep',
+            label: 'Table of Contents'
+        },
         // https://vitepress.dev/reference/default-theme-config
         search: {
             provider: "local",
