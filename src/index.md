@@ -27,7 +27,7 @@ features:
         src: https://developers.google.com/static/blockly/images/landing/blockly.png
   - title: Python API
     details: Python Library Documentation
-    link: /python-api/
+    link: /programming/python/api-references/overview
     icon: 
         src: https://upload.wikimedia.org/wikipedia/commons/archive/c/c3/20220821155028%21Python-logo-notext.svg
   - title: Arduino
