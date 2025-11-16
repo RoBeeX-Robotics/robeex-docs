@@ -7,18 +7,21 @@ orderPriority: 65
 
 Once your drone is fully activated and calibrated, you can begin manual flight operations using the RoBeeX App interface.
 
+<image width="700" height="100" src="/assets/app-android.jpg"></image>
+
+
 ## ⚠️ Pre-Flight Requirements & Safety Checks
 
 Before launching your drone, **STOP** and ensure you have completed the following essential setup steps and safety checks:
 
-* **App Installation & Account:** Ensure the app is installed and you are logged into your account.
-* **Drone Activation:** Confirm the drone has completed its mandatory OTA update.
-* **IMU Calibration:** Ensure you have completed the IMU (Accelerometer and Gyroscope) calibration following activation.
+* **💾 App Installation & Account:** Ensure the app is installed and you are logged into your account.
+* **⚡ Drone Activation:** Confirm the drone has completed its mandatory OTA update.
+* **🎯 IMU Calibration:** Ensure you have completed the IMU (Accelerometer and Gyroscope) calibration following activation.
 * **🔋 Battery Check:** **The battery must be fully charged (100%).** Do not fly below 30% charge.
 * **⚙️ Propeller Check:** Inspect all propellers for damage (cracks, bends, nicks) and ensure they are **securely mounted** to the motor shafts.
 * **🛡️ Propeller Guards:** **Install the propeller guards** for safety, especially when flying indoors or close to obstacles.
 
----
+
 
 ## 🛑 Critical Flight Safety Warnings
 
@@ -26,10 +29,18 @@ Before launching your drone, **STOP** and ensure you have completed the followin
 * **NEVER Fly Over People:** **Do not fly** the drone over the heads of humans, children, or pets. Maintain a safe horizontal distance.
 * **Propeller Hazard:** **NEVER** insert your fingers or any foreign object into the propellers while they are spinning or during flight.
 * **Hot Motors:** The motors will become **`VERY HOT`** after every flight. **`Do not touch the motors`** immediately after landing to prevent burns.
+:::
+
+
+::: danger 
+
+<div style="text-align: center;">
+  <img src="/assets/kill.jpg" alt="Emergency Kill Button" style="display: block; margin: 0 auto;" width="300" height="100" />
+</div>
+
 * **EMERGENCY KILL BUTTON:** The large red **"`KILL`"** button is a critically important emergency stop feature that immediately cuts power to all motors in any condition. **Only use the KILL button in an emergency to prevent injury to people or catastrophic damage to property.**
 :::
 
----
 
 ## 🚀 The Flight Interface
 
@@ -37,54 +48,142 @@ The flight interface provides your live video feed, virtual joysticks, and criti
 
 ### 📊 Telemetry and Status Bar
 
-| Indicator | Range | Description | Low Battery Warning |
-| :--- | :--- | :--- | :--- |
-| **Wi-Fi Icon** | Strength Bars | Indicates the strength of the Wi-Fi connection between the drone and the app. | N/A |
-| **Battery Icon** | 0% to 100% | Indicates the remaining battery charge level. | **30%:** Mobile device/tablet gets slow haptic feedback. **<15%:** Haptic feedback becomes intense, signalling immediate landing. |
-| **Y (Yaw)** | Degrees | Heading rotation of the drone in degrees, relative to the takeoff direction. | N/A |
-| **D (Distance)** | Meters (m) | Horizontal distance from the **Home Point** (takeoff location). | N/A |
-| **H (Height)** | Meters (m) | Height of the drone relative to the surface directly beneath it (measured by the Lidar Range Finder). | N/A |
+<div style="text-align: center;">
+  <img src="/assets/telemetry.jpg" alt="Emergency Kill Button" style="display: block; margin: 0 auto;" width="450" height="100" />
+</div>
+
+| Indicator | Range | Description |
+| :--- | :--- | :--- |
+| **Wi-Fi Icon** | Strength Bars | Indicates the strength of the Wi-Fi connection between the drone and the app.
+| **Battery Icon** | 0% to 100% | Indicates the remaining battery charge level.
+| **Y (Yaw)** | Degrees | Heading rotation of the drone in degrees, relative to the takeoff direction.
+| **D (Distance)** | Meters (m) | Horizontal distance from the **Home Point** (takeoff location).
+| **H (Height)** | Meters (m) | Height of the drone relative to the surface directly beneath it (measured by the Lidar Range Finder).
+
+
+::: warning
+#### 🔋Low Battery Warning & Haptic Feedback:
+
+* **⚠️ 30% Charge (Alert):** When the battery level drops to **30%**, the connected mobile device or tablet will provide **slow haptic (vibration) feedback** to alert the operator.
+* **🚨 <15% Charge (CRITICAL):** When the battery level is **below 15%**, the haptic feedback will become **intense**, signaling a **critical low battery state** and requiring **`immediate landing`**.
+:::
+
+::: danger **🚨DANGER**
+#### ⚠️🔥 **Never use or charge swollen, leaky, or damaged Flight Batteries. Batteries in this compromised state pose a severe risk of catching fire.**
+:::
+
+<br>
 
 ### 🧭 Virtual Joystick Controls
 
-The drone is controlled via two virtual joysticks (left and right circles).
+<div style="text-align: center;">
+  <img src="/assets/joysticks.jpg" alt="Emergency Kill Button" style="display: block; margin: 0 auto;" width="600" height="100" />
+</div>
 
-| Virtual Joystick | Axis Movement | Function | Action |
-| :--- | :--- | :--- | :--- |
-| **Left Stick** | Vertical (Throttle) | **Altitude (Ascend/Descend)** | Up Arrow (⬆️) to Ascend, Down Arrow (⬇️) to Descend |
-| **Left Stick** | Horizontal (Yaw) | **Rotation (Turning)** | Left/Right Arrows (↩️, ↪️) to Rotate (Yaw) Counter-Clockwise/Clockwise |
-| **Right Stick** | Vertical (Pitch) | **Forward/Backward** | Up/Down Arrows (⬆️, ⬇️) to fly Forward/Backward |
-| **Right Stick** | Horizontal (Roll) | **Side-to-Side (Strafe)** | Left/Right Arrows (⬅️, ➡️) to fly Left/Right |
+The **RoBeeX AI Drone** is controlled using two virtual joysticks on the mobile app screen. These joysticks govern the drone's movement across four axes: **Throttle, Yaw, Pitch, and Roll**.
 
 ---
 
-## 3. 📸 Camera and Gallery Functions
+#### 1. ⬆️ Throttle (Left Stick, Vertical Axis)
 
-### Flight Control Buttons (Left Side)
+Throttle controls the vertical movement of the drone. It adjusts the total power supplied to all four motors simultaneously.
+
+<image width="700" height="100" src="/assets/throttle.png"></image>
+* **Function:** **Altitude** (Ascend / Descend)
+* **Action:**
+    * **Push Up:** Increases total motor power, causing the drone to **Ascend**.
+    * **Pull Down:** Decreases total motor power, causing the drone to **Descend**.
+
+---
+
+#### 2. 🔄 Yaw (Left Stick, Horizontal Axis)
+
+Yaw controls the rotation of the drone around its central vertical axis. It changes the direction the nose of the drone is facing without changing its horizontal position.
+
+<image width="700" height="100" src="/assets/yaw.png"></image>
+* **Function:** **Rotation (Heading)**
+* **Action:**
+    * **Push Left:** Rotates the drone **Counter-Clockwise (Left)**.
+    * **Push Right:** Rotates the drone **Clockwise (Right)**.
+
+---
+
+#### 3. ↔️ Roll (Right Stick, Horizontal Axis)
+
+Roll controls the side-to-side (lateral) movement of the drone. The drone slightly tilts its body to the left or right to create a sideways thrust.
+
+<image width="700" height="100" src="/assets/roll.png"></image>
+* **Function:** **Lateral Movement (Strafe)**
+* **Action:**
+    * **Push Left:** Tilts the drone left, causing it to move **Left (Strafe)**.
+    * **Push Right:** Tilts the drone right, causing it to move **Right (Strafe)**.
+
+---
+
+#### 4. ↕️ Pitch (Right Stick, Vertical Axis)
+
+Pitch controls the forward and backward movement of the drone. The drone tilts its nose up or down to create forward or backward thrust.
+
+<image width="700" height="100" src="/assets/pitch.png"></image>
+* **Function:** **Translational Movement (Forward / Backward)**
+* **Action:**
+    * **Push Up:** Tilts the nose down, causing the drone to move **Forward**.
+    * **Pull Down:** Tilts the nose up, causing the drone to move **Backward**.
+
+
+
+## 📸 Camera and Gallery Buttons
 
 | Button | Icon | Function | Notes |
 | :--- | :--- | :--- | :--- |
-| **Back Button** | Arrow Left | Returns to the previous screen or main dashboard. | |
-| **Gallery Access** | Picture/Mountain | Opens the in-app media gallery to view saved files. | |
-| **Video Record** | Video Camera | Toggles video recording on/off. | During recording, a **Stop** button and a **recording time** counter appear below the camera view. |
-| **Photo Capture** | Shutter | Takes a single still photograph. | The number in a red circle below the Gallery button counts up with every photo taken. |
-| **Flashlight** | Lightbulb | Toggles the Bottom Flash Light LED on/off. | The brightness is set in the Settings menu. |
+| **Back Button** | <img src="/assets/back-button.png"> | Returns to the previous screen or main dashboard. | - |
+| **Gallery Access** | <img src="/assets/gallery-button.png"> | Opens the in-app media gallery to view saved files. | The number in a red circle below the Gallery button counts up with every photo taken. |
+| **Video Record** | <img src="/assets/record-button.png" > | Toggles video recording on/off. | During recording, a **Stop** button and a **recording time** counter appear below the camera view. |
+| **Photo Capture** | <img src="/assets/shutter-button.png" > | Takes a single still photograph. | The number in a red circle below the Gallery button counts up with every photo taken. |
 
 
 
-## 🚦 Takeoff and Landing
 
+
+
+::: tip 
+<div style="text-align: center;">
+  <img src="/assets/record-time.png" alt="Emergency Kill Button" style="display: block; margin: 0 auto;" width="200" height="100" />
+</div>
+
+**Video Recording Status:**
+When recording is active, the recording time and a **Stop** button appear at the bottom of the flight interface. The time displays the running counter in minutes and seconds (e.g., `00:03`). Pressing the **Stop** button immediately halts the video recording and saves the file.
+**For see all captured photos and videos, refer to the [Gallery Menu](/user-manuals/robeex-ai-drone/🖼️-gallery.md)**.
+:::
+
+
+## ⚙️Settings Menu Button
+
+| Button | Icon | Function | Notes |
+| :--- | :---: | :--- | :--- |
+| **Settings Menu** | <img src="/assets/setting-button.jpg" width="450"> | This central configuration hub is used to manage drone behavior, safety parameters, sensor calibration, account details, and view system information. | To access the Settings Menu and understand its configuration options, please refer to the **[Settings Menu Reference](/user-manuals/robeex-ai-drone/⚙️-settings.md)**. |
+
+
+ ## 💡Bottom Flash LED Button
+| Button | Icon | Function | Notes |
+| :--- | :--- | :--- | :--- |
+| **Bottom Flash LED** | <img src="/assets/flash-bottom.jpg" width="300" > | Toggles the **Bottom Flash Light LED** on or off. This light aids in low-light landing and ground visibility. | The brightness level is configurable in the **Settings Menu** via the [Settings Menu Reference](/user-manuals/robeex-ai-drone/⚙️-settings.md).  |
+
+::: tip
+**Advanced Control:** Bottom Flash Light LED can also be controlled and programmed using coding languages such as **Blockly, Python, and Arduino.**
+:::
+
+
+
+## 🚦 Takeoff and Landing Buttons
 The RoBeeX App uses dedicated on-screen buttons to safely initiate automatic takeoff and landing. Both functions require a **Press and Hold** confirmation to prevent accidental activation.
 
 ### ⬆️ Automatic Takeoff
 
 1.  **Preparation:** Place the drone on a **flat, level, and clear** surface.
 2.  **Initiation:** Tap the **"Auto Takeoff"** button (<img src="/assets/take-off-small.png" style="display: inline; width: 40px; height: 40px; vertical-align: text-bottom;">) on the right side of the flight screen.
-
 3.  **Confirmation Pop-up:** A pop-up window will appear, displaying a large **"Take Off"** button. (See image below).
-
 <image width="700" height="100" src="/assets/take-off-dialog.png"></image>
-
 4.  **Execution:** **Press and hold** the central **"Take Off"** button **until the yellow circle indicator is complete** (the yellow circle around the button fills up).
     * The drone will automatically start its motors and ascend to a safe altitude of **0.5 meters (50 cm)**, where it will hover.
 
@@ -97,91 +196,9 @@ The RoBeeX App uses dedicated on-screen buttons to safely initiate automatic tak
 1.  **Positioning:** Fly the drone back to the desired landing area, ensuring the surface is flat and clear of obstacles.
 2.  **Initiation:** Tap the **"Auto Land"** button (<img src="/assets/landig-small.png" style="display: inline; width: 40px; height: 40px; vertical-align: text-bottom;">) on the right side of the flight screen.
 3.  **Confirmation Pop-up:** A pop-up window will appear, displaying a large **"Land"** button. (See image below).
-
 <image width="700" height="100" src="/assets/landing-dialog.jpg"></image>
-
 4.  **Execution:** **Press and hold** the central **"Land"** button to begin the procedure.
     * The drone will automatically descend, reduce motor speed, and **shut off the motors immediately upon contact with the ground.**
 
 
 
-
-## 🖼️ Gallery Menu
-
-The **Gallery** menu, accessible from the main dashboard or the flight screen, allows you to view and manage media stored on the drone.
-
-* **Video Tab:** Displays all recorded video files, including duration (e.g., `00:04`).
-* **Pictures Tab:** Displays all captured photo files.
-
-
-# ⚙️ Settings Menu Reference
-
-The **Settings** menu, accessible via the gear icon on the main dashboard, is where you configure drone behavior, manage safety parameters, calibrate sensors, and view system information. The menu is divided into four main tabs.
-
----
-
-## 1. 🚁 Drone Settings Tab
-
-This tab controls the hardware configuration and flight limits.
-
-### Camera
-
-| Setting | Description | Control Type |
-| :--- | :--- | :--- |
-| **Resolution** | Defines the image and video resolution of the drone's camera (e.g., `800x600`). Lower resolution uses less bandwidth and storage. | Dropdown Selector |
-| **Compression Ratio** | Controls the compression level for captured media. A lower ratio (e.g., 35%) means higher quality but larger file sizes. | Slider (0% to 100%) |
-
-### Safety
-
-| Setting | Description | Control Type |
-| :--- | :--- | :--- |
-| **Max Altitude (cm)** | Sets the absolute maximum height the drone is allowed to fly. The limit is **300 cm (3 meters)** above the surface below the drone at any given moment during flight. | Slider |
-| **Max Distance (cm)** | Sets the maximum horizontal range the drone can fly from the **Home Point** (point of takeoff/activation). The limit is **800 cm (8 meters)**. | Slider |
-| **Emergency Kill Button** | **CRITICAL:** When enabled, allows for immediate motor shut-off via a designated button/stick command. **It is highly recommended to keep this Enabled.** | Toggle Switch |
-
-### Bottom Flash Light LED
-
-| Setting | Description | Control Type |
-| :--- | :--- | :--- |
-| **Default Brightness** | Controls the intensity of the drone's bottom-facing LED light, typically used for low-light landing and visibility. | Slider (e.g., `100 %`) |
-
----
-
-## 2. 🛠️ Calibration Tab
-
-This tab is dedicated to maintaining sensor accuracy. **All calibrations should be performed on a level, stable surface.** (Refer to the **"IMU Calibration"** page for detailed steps).
-
-| Sensor | Status Indicator | Action | Purpose |
-| :--- | :--- | :--- | :--- |
-| **Accelerometer** | Green `Status: OK !` | `Calibrate` Button | Calibrates the sensor that measures the drone's linear acceleration and tilt. |
-| **Gyro** | Green `Status: OK !` | `Calibrate` Button | Calibrates the sensor that measures the drone's angular velocity (rotation). |
-| **Bottom Lidar Range Finder** | Green `Status: OK !` | (No Button) | Status check for the sensor used for precision altitude holding and safe landing. |
-
----
-
-## 3. 👤 Account Tab
-
-This section allows the user to view and manage their RoBeeX account profile.
-
-| Field | Description |
-| :--- | :--- |
-| **Your Profile** | Displays the user's avatar. |
-| **Email*** | The registered email address for the RoBeeX account. |
-| **First Name*** | The user's registered first name. |
-| **Last Name*** | The user's registered last name. |
-| **Birth Date** | The user's registered date of birth. |
-| **Gender** | The user's registered gender. |
-| **Log Out** | **(Red Button)** Used to sign out of your RoBeeX account within the application. |
-
----
-
-## 4. ℹ️ Info Tab
-
-This tab provides critical version and build information about the application.
-
-| Data Field | Example Value | Description |
-| :--- | :--- | :--- |
-| **RoBeeX App Logo** | (Image of the RoBeeX logo) | Visual identifier of the application brand. |
-| **Version Info** | `0.45.0` | The user-facing software version number of the installed RoBeeX App. |
-| **Commit Hash** | `74aab33` | Internal code reference (useful for developer troubleshooting). |
-| **Build Timestamp** | `2025/10/26, 11:05:57` | The date and time the current app build was compiled. |

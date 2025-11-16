@@ -7,6 +7,11 @@ orderPriority: 85
 ## ⚙️ Overview
 The **RoBeeX AI Drone Kit** includes a rechargeable **LiPo Battery** that powers your drone.  
 
+::: warning
+Never use non-RoBeeX batteries.
+Visit [www.robeex.com](https://www.robeex.com)
+to purchase official replacements.
+ :::
 
 ## 🔌 Charging Instructions
 
@@ -100,20 +105,20 @@ Always make sure to check the battery charge level **before each flight** to ens
 
 ## 🚨 Battery Warnings During Flight
 
-:::tip
+::: tip
 Before every flight, make sure the battery is **fully charged** using the provided charger and cable.
 :::
 
-If battery warnings appear, land the aircraft immediately to avoid loss of power.
+::: warning
+#### 🔋Low Battery Warning & Haptic Feedback:
 
-When a Critical Battery Level warning occurs, the drone will automatically descend.
+* **⚠️ 30% Charge (Alert):** When the battery level drops to **30%**, the connected mobile device or tablet will provide **slow haptic (vibration) feedback**. This is your primary alert to **promptly land the aircraft** to prevent further power loss and an uncontrolled descent.
+* **🚨 <15% Charge (CRITICAL):** When the battery level is **below 15%**, the haptic feedback will become **intense**, signaling a **critical low battery state** and requiring **immediate landing**.
+:::
 
-Never use non-RoBeeX batteries.
-Visit [www.robeex.com](https://www.robeex.com)
- to purchase official replacements.
 
-::: danger ⚠️ Danger
-Never use or charge swollen, leaky, or damaged Flight Batteries.
+::: danger **🚨DANGER**
+#### ⚠️🔥 **Never use or charge swollen, leaky, or damaged Flight Batteries. Batteries in this compromised state pose a severe risk of catching fire.**
 :::
 
 ## 🧊 Storage Recommendations
