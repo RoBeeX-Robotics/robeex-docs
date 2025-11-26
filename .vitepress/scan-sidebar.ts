@@ -3,9 +3,10 @@ import path from 'path';
 import { DefaultTheme } from 'vitepress/theme';
 import fm from 'front-matter';
 
-let excludeList = ['assets', 'index.md'];
+const INDEX_FILE = 'index.md';
+let excludeList = ['assets', 'public'];
 if (process.env['NODE_ENV'] == 'production') {
-    excludeList.push('dev')
+    excludeList.push('dev');
 }
 
 /**
@@ -18,14 +19,14 @@ function toTitle(name: string): string {
         .replace(/[-_]/g, ' ')
         .replace(/\.[^/.]+$/, '')
         .replace(/\b\w/g, (c) => c.toUpperCase())
-        .replace(/\brobeex\b/ig, 'RoBeeX')
-        .replace(/\bai\b/ig, 'AI')
-        .replace(/\bapi\b/ig, 'API')
-        .replace(/\bled\b/ig, 'LED')
-        .replace(/\budp\b/ig, 'UDP')
-        .replace(/\brc\b/ig, 'RC')
-        .replace(/\bimu\b/ig, 'IMU')
-        .replace(/\bfaq\b/ig, 'FAQ');
+        .replace(/\brobeex\b/gi, 'RoBeeX')
+        .replace(/\bai\b/gi, 'AI')
+        .replace(/\bapi\b/gi, 'API')
+        .replace(/\bled\b/gi, 'LED')
+        .replace(/\budp\b/gi, 'UDP')
+        .replace(/\brc\b/gi, 'RC')
+        .replace(/\bimu\b/gi, 'IMU')
+        .replace(/\bfaq\b/gi, 'FAQ');
 }
 
 /**
@@ -34,24 +35,42 @@ function toTitle(name: string): string {
 function scanDirectory(
     dir: string,
     basePath = '',
-    depth = 0
+    depth = 0,
 ): DefaultTheme.SidebarItem[] {
     const isFirst = depth === 0;
 
     const entries = fs
         .readdirSync(dir, { withFileTypes: true })
-        .filter((dirent) => excludeList.indexOf(dirent.name) === -1)
-        .map(({ name }) => {
+        .filter((dirent) => {
+            if (excludeList.indexOf(dirent.name) != -1) return false;
+
+            if (dirent.isFile() && dirent.name == INDEX_FILE) {
+                const p = path.join(dir, dirent.name);
+
+                // console.log(p);
+
+                const doInclude =
+                    fm<{ include: number }>(fs.readFileSync(p).toString())
+                        .attributes.include || false;
+
+                return doInclude;
+            }
+
+            return true;
+        })
+        .map((dirent) => {
+            const { name } = dirent;
+
             const fullPath = path.join(dir, name);
-            const isDir = fs.statSync(fullPath).isDirectory();
+            const isDir = dirent.isDirectory();
 
             let orderPriority = 0;
-            const mdFile = isDir ? path.join(fullPath, 'index.md') : fullPath;
+            const mdFile = isDir ? path.join(fullPath, INDEX_FILE) : fullPath;
 
             if (fs.existsSync(mdFile)) {
                 orderPriority =
                     fm<{ orderPriority: number }>(
-                        fs.readFileSync(mdFile).toString()
+                        fs.readFileSync(mdFile).toString(),
                     ).attributes.orderPriority || orderPriority;
             }
 
@@ -65,6 +84,8 @@ function scanDirectory(
         });
 
     entries.sort((a, b) => {
+        if (a.name == INDEX_FILE) return -1;
+
         if (a.orderPriority !== b.orderPriority) {
             return b.orderPriority - a.orderPriority;
         }
@@ -78,24 +99,33 @@ function scanDirectory(
     });
 
     const items: DefaultTheme.SidebarItem[] = entries
-        .filter((x) => x.isDir ? true : x.name.endsWith('.md'))
+        .filter((x) => (x.isDir ? true : x.name.endsWith('.md')))
         .map((entry) => {
             if (entry.isDir) {
                 const subItems = scanDirectory(
                     entry.fullPath,
                     entry.relativePath,
-                    depth + 1
+                    depth + 1,
                 );
 
-                const isLast = subItems.findIndex((x) => x.items != undefined) == -1
+                // const isLast =
+
+                let link: string | undefined = undefined;
+                const hasIndex = subItems?.[0]?.text == toTitle(INDEX_FILE);
+                if (
+                    hasIndex ||
+                    subItems.findIndex((x) => x.items != undefined) == -1
+                ) {
+                    link = subItems?.[0]?.link?.replace('index', '');
+                }
 
                 return {
                     text: isFirst
                         ? toTitle(entry.name).toUpperCase()
                         : toTitle(entry.name),
                     collapsed: !isFirst,
-                    link: isLast ? subItems[0].link : undefined,
-                    items: subItems,
+                    link,
+                    items: hasIndex ? subItems.slice(1) : subItems,
                 };
             }
 
@@ -110,7 +140,7 @@ function scanDirectory(
             };
         });
 
-    if (depth == 3) console.log('after sort', items);
+    // if (depth == 3) console.log('after sort', items);
 
     return items;
 }
@@ -132,5 +162,6 @@ function generateSidebar(): DefaultTheme.SidebarItem[] {
 
 // --- Run and output the result ---
 export const sidebar = generateSidebar();
-// console.log(JSON.stringify(sidebar, null, 4));
-console.log(sidebar);
+// console.log(JSON.stringify(sidebar, null, 2));
+// console.log(sidebar);
+//

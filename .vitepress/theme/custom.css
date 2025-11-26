@@ -19,3 +19,15 @@
   );
   --vp-home-hero-image-filter: blur(44px); */
 }
+
+#blocklyArea {
+    /* width: 100%; */
+    position: relative;
+}
+
+#blocklyDiv {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}

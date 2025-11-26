@@ -19,9 +19,9 @@ features:
     details: User Manuals
     link: /user-manuals/robeex-ai-drone/first-setup
     icon: 
-        src: /assets/book.png
+        src: /book.png
   - title: Blockly
-    link: /api-examples
+    link: /programming/blockly/references/overview
     details: App Blockly Docs and Tutorials
     icon:
         src: https://developers.google.com/static/blockly/images/landing/blockly.png
@@ -31,7 +31,7 @@ features:
     icon: 
         src: https://upload.wikimedia.org/wikipedia/commons/archive/c/c3/20220821155028%21Python-logo-notext.svg
   - title: Arduino
-    link: /api-examples
+    link: /programming/arduino
     details: RoBeeX Arduino Library Documentation
     icon:
         src: https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/120px-Arduino_Logo.svg.png?20200922062315

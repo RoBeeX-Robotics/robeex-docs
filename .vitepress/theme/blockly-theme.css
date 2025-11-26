@@ -1,0 +1,54 @@
+.geras-renderer.dark-theme .blocklyText,
+.geras-renderer.dark-theme .blocklyFlyoutLabelText {
+    font: 900 11pt sans-serif;
+}
+.geras-renderer.dark-theme .blocklyText {
+    fill: #fff;
+}
+.geras-renderer.dark-theme .blocklyNonEditableText > rect,
+.geras-renderer.dark-theme .blocklyEditableText > rect {
+    fill: #fff;
+    fill-opacity: 0.6;
+    stroke: none;
+}
+.geras-renderer.dark-theme .blocklyNonEditableText > text,
+.geras-renderer.dark-theme .blocklyEditableText > text {
+    fill: #000;
+}
+.geras-renderer.dark-theme .blocklyFlyoutLabelText {
+    fill: #000;
+}
+.geras-renderer.dark-theme .blocklyText.blocklyBubbleText {
+    fill: #000;
+}
+.geras-renderer.dark-theme .blocklyEditableText:not(.editing):hover > rect {
+    stroke: #fff;
+    stroke-width: 2;
+}
+.geras-renderer.dark-theme .blocklyHtmlInput {
+    font-family: sans-serif;
+    font-weight: 900;
+}
+.geras-renderer.dark-theme .blocklySelected > .blocklyPath {
+    stroke: #fc3;
+    stroke-width: 3px;
+}
+.geras-renderer.dark-theme .blocklyHighlightedConnectionPath {
+    stroke: #fc3;
+}
+.geras-renderer.dark-theme .blocklyReplaceable .blocklyPath {
+    fill-opacity: 0.5;
+}
+.geras-renderer.dark-theme .blocklyReplaceable .blocklyPathLight,
+.geras-renderer.dark-theme .blocklyReplaceable .blocklyPathDark {
+    display: none;
+}
+.geras-renderer.dark-theme .blocklyInsertionMarker > .blocklyPath {
+    fill-opacity: 0.1;
+    stroke: none;
+}
+.geras-renderer.dark-theme .blocklyInsertionMarker > .blocklyPathLight,
+.geras-renderer.dark-theme .blocklyInsertionMarker > .blocklyPathDark {
+    fill-opacity: 0.1;
+    stroke: none;
+}
