@@ -17,7 +17,7 @@ to purchase official replacements.
 
 ### 🎥 Video Guide: How to Charge the Battery
 
-<video src="/assets/battery-charging.webm" controls loop autoplay muted playsinline width="450" height="315"></video>
+<video src="/assets/battery-charging.webm" controls loop autoplay muted playsinline width="500"></video>
 
 
 ::: tip
@@ -59,7 +59,7 @@ Ensure the battery is properly mounted and cannot move before flight.
 :::
 
 ### 🎥 Video Guide: How to install the battery
-<video src="/assets/battery-installing.webm" controls loop autoplay muted playsinline width="450" height="315"></video>
+<video src="/assets/battery-installing.webm" controls loop autoplay width="500"></video>
 <br>
 
 
@@ -94,8 +94,8 @@ The **RGB1 – RGB4 LEDs** will light up to show the current battery charge leve
 
 <br>
 
-### 🎥 Video Guide: How to Check Battery Charge Level (Video Shows 75%)
-<video src="/assets/battery-checking-75.webm" controls loop autoplay muted playsinline width="400" height="315"></video>
+### 🎥 Video Guide: How to Check Battery Charge Level (Video Shows `75%`)
+<video src="/assets/battery-checking-75.webm" controls loop autoplay width="500"></video>
 <br>
 
 ::: tip

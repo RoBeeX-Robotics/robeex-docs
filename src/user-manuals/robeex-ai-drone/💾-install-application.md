@@ -2,7 +2,7 @@
 orderPriority: 80
 ---
 
-# Install RoBeeX Application
+# 📲Install RoBeeX Application
 
 The **RoBeeX App** is the essential command center for controlling and managing your RoBeeX drone. 
 
@@ -23,6 +23,11 @@ Download and install the **RoBeeX App** for your Android device using the direct
 
 👉 [**Download RoBeeX Android App**](https://robeex.com/downloads)
 
+[<image src="/assets/android-app.png" width="150"></image>](https://robeex.com/downloads)
+
+
+
+
 ### Installation Steps
 
 1.  Download the `.apk` file from the link above.
@@ -37,60 +42,37 @@ Download and install the **RoBeeX App** for Windows desktop environments:
 
 👉 [**Download RoBeeX Windows App**](https://robeex.com/downloads)
 
+[<image src="/assets/windows-app.png" width="150"></image>](https://robeex.com/downloads)
+
+
+
 ### Installation Steps
 
-1.  Download the `.exe` file from the link above.
+1.  Download the `robeex-app-xxx.exe` file from the link above.
 2.  **Double-click** the file to begin the installation wizard.
-3.  After installation, open the **RoBeeX App** from your desktop shortcut or Start menu.
 
+
+::: warning
+### ⚠️ Installation Security Warning
+If your operating system (PC/laptop) displays a security warning similar to **"Windows protected your PC"** during the installation, follow these steps to proceed:
+
+On the warning screen that contains the **"Don't run"** option, click the **"More info"** link.
+<image src="/assets/windows-app-01.png" width="500"></image>
 <br>
 
-## 🔑 Creating and Accessing Your RoBeeX Account
-
-Your RoBeeX account is required for drone activation, managing your settings, and accessing the programming features within the RoBeeX App.
-
-To begin the process, click the prominent **"`Login/Register`"** yellow button on the main app screen.
-
-## Access Modes
-
-The app provides three distinct options for accessing or managing your account:
-
-### 1. Existing Account Login
-
-If you already have a RoBeeX account:
-
-* Enter your registered **Email** and **Password** in the designated fields.
-* Click the **`Login`** button.
-
-### 2. New Account Registration
-
-If you do not yet have a RoBeeX account, you must create one:
-
-1.  Click the **"`Don't have an account? Click here to create one`"** link.
-2.  Fill in the registration form with the following required information:
-    * **Email** (Must be an existing, valid email address)
-    * **Password** (Select a strong password)
-    * **Password Confirmation** (Re-enter your selected password)
-    * **First Name**
-    * **Last Name**
-    * **Birth Date**
-    * **Gender**
-3.  Press the **"`Register`"** button to complete your account creation.
-
-### 3. Forgotten Password Recovery
-
-If you have forgotten your password:
-
-1.  Click the **"`Forgot your password? Click here`"** link.
-2.  Enter the **Email** address associated with your RoBeeX account.
-3.  Click the **"`Submit`"** yellow button.
-4.  You will receive an email shortly with instructions and a link to **reset your password**. Follow the steps in the email to regain access to your account.
-
----
-
-::: tip
-**Required Functions:** The RoBeeX App and a valid account are **mandatory** for drone activation, firmware updates, sensor calibration, camera control, and block-based coding.
+After clicking **"More info,"** a new button (usually labeled **"Run anyway"**) will appear at the bottom of the window.
+Click the new **"Run anyway"** button to proceed with the installation of the RoBeeX application.
+<image src="/assets/windows-app-02.png" width="500"></image>
+<br>
+<image src="/assets/windows-app-03.png" width="500"></image>
 :::
+
+3.  After installation, open the **RoBeeX App** from your desktop shortcut or Start menu.
+
+
+
+## 👨‍💼 Creating and Accessing Your RoBeeX Account
+Your RoBeeX account is required for drone activation, managing your settings, and accessing the programming features within the RoBeeX App. To learn how to create and manage your account, continue reading this **[Account Management](/user-manuals/robeex-ai-drone/👨‍💼-account-managment.md)** page.
 
 ::: warning
 **Software Version:** Always use the **latest available version** of the RoBeeX App for optimal performance, stability, and access to all features.
