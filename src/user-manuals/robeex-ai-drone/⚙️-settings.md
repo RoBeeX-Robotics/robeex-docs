@@ -100,22 +100,37 @@ The Bottom Flash Light LED can also be controlled and programmed using coding la
 
 ## 🛠️ Calibration Tab
 
-This tab is dedicated to maintaining sensor accuracy. **All calibrations should be performed on a level, stable surface.** (Refer to the **[IMU Calibration](/user-manuals/robeex-ai-drone/🎯-imu-calibration.md)** page for detailed steps).
+This tab is dedicated to maintaining the accuracy of the drone's critical flight sensors. **All calibrations should be performed on a level, stable surface.**
+
+<img src="/assets/error-calib.jpg">
+
+*Image 1: Before Calibration - Sensors showing 'Needs Calibration !!!'*
 
 <img src="/assets/ok-calib.png">
 
+*Image 2: After Calibration - All sensors showing 'OK !'*
+
+---
+
 | Sensor | Status Indicator | Action | Purpose |
 | :--- | :--- | :--- | :--- |
-| **Accelerometer** | Green `Status: OK !` | `Calibrate` Button | Calibrates the sensor that measures the drone's linear acceleration and tilt. |
-| **Gyro** | Green `Status: OK !` | `Calibrate` Button | Calibrates the sensor that measures the drone's angular velocity (rotation). |
-| **Bottom Lidar Range Finder** | Green `Status: OK !` | (No Button) | Status check for the sensor used for precision altitude holding and safe landing. |
+| **Accelerometer** | **🔴 Status: Needs Calibration !!!** (Before) / **🟢 Status: OK !** (After) | `Calibrate` Button | Calibrates the sensor that measures the drone's linear acceleration and tilt, ensuring accurate movement detection. |
+| **Gyro** | **🔴 Status: Needs Calibration !!!** (Before) / **🟢 Status: OK !** (After) | `Calibrate` Button | Calibrates the sensor that measures the drone's angular velocity (rotation), crucial for stable flight. |
+| **Bottom Lidar Range Finder** | **🟢 Status: OK !** (Usually) | (No Button) | Status check for the sensor used for precision altitude holding and safe landing. This sensor typically does not require user calibration. |
+
+::: tip
+For detailed, step-by-step instructions on performing these calibrations, including the IMU (Accelerometer and Gyro), please refer to the **[IMU Calibration](/user-manuals/robeex-ai-drone/🎯-imu-calibration.md)** page.
+:::
 
 ::: warning 🔴🟡 CRITICAL WARNING: Sensor Error
 
-If the drone's **RGB LEDs** start flashing alternating **RED** and **YELLOW** (🔴🟡), this indicates a **critical sensor error** and confirms that the **IMU (Inertial Measurement Unit) needs immediate calibration.**
+If the drone's **RGB LEDs** start flashing alternating **RED** and **YELLOW** (🔴🟡), this indicates a **critical IMU sensor error** and confirms that the **Accelerometer and Gyro need immediate calibration.**
 
-* **Action Required:** You must immediately refer to the **[IMU Calibration](/user-manuals/robeex-ai-drone/🎯-imu-calibration.md)** page.
+* **Action Required:** You must immediately refer to the **[IMU Calibration](/user-manuals/robeex-ai-drone/🎯-imu-calibration.md)** page to resolve this.
 :::
+
+
+
 
 <br>
 
