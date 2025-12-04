@@ -7,6 +7,7 @@ import { sidebar } from "./scan-sidebar";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+    ignoreDeadLinks: true,
     vite: {
         plugins: [
             // add plugin

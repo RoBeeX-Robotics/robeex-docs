@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Get started
-      link: /user-manuals/robeex-ai-drone/first-setup/assembly
+      link: user-manuals/robeex-ai-drone/📘-specification.html
     - theme: alt
       text: API References
       link: /programming
@@ -17,11 +17,11 @@ hero:
 features:
   - title: User Manuals
     details: User Manuals
-    link: /user-manuals/robeex-ai-drone/first-setup
+    link: user-manuals/robeex-ai-drone/📘-specification.html
     icon: 
         src: /book.png
   - title: Blockly
-    link: /programming/blockly/references/overview
+    link: /programming/blockly/guides/introduction
     details: App Blockly Docs and Tutorials
     icon:
         src: https://developers.google.com/static/blockly/images/landing/blockly.png
