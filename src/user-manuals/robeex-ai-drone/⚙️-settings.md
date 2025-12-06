@@ -130,8 +130,6 @@ If the drone's **RGB LEDs** start flashing alternating **RED** and **YELLOW** (ð
 :::
 
 
-
-
 <br>
 
 ## ðŸ‘¤ Account Tab
