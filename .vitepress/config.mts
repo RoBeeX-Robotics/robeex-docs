@@ -8,6 +8,21 @@ import { sidebar } from "./scan-sidebar";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     ignoreDeadLinks: true,
+    head: [
+        [
+            "script",
+            {
+                type: "text/javascript",
+            },
+            `
+(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "uir0bpxaqd");
+            `,
+        ],
+    ],
     vite: {
         plugins: [
             // add plugin
@@ -36,11 +51,11 @@ export default defineConfig({
     title: "RoBeeX Docs",
     description: "RoBeeX Documentation Site",
     srcDir: "src",
-    appearance: 'force-dark',
+    appearance: "force-dark",
     themeConfig: {
         outline: {
-            level: 'deep',
-            label: 'Table of Contents'
+            level: "deep",
+            label: "Table of Contents",
         },
         // https://vitepress.dev/reference/default-theme-config
         search: {
