@@ -1,4 +1,19 @@
+@import "vazirmatn/Vazirmatn-Variable-font-face.css";
+
+/* @font-face { */
+/*     font-family: "Vazirmatn"; */
+/*     src: */
+/*         url("~node_modules/vazirmatn/fonts/webfonts/Vazirmatn[wght].woff2") */
+/*             format("woff2 supports variations"), */
+/*         url("~node_modules/vazirmatn/fonts/webfonts/Vazirmatn[wght].woff2") */
+/*             format("woff2-variations"); */
+/*     font-weight: 100 900; */
+/*     font-style: normal; */
+/*     font-display: swap; */
+/* } */
+
 :root {
+    --vp-font-family-base: 'Inter', 'Vazirmatn', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     --primary: #facc15;
     --vp-c-brand-1: var(--primary);
     --vp-c-brand-2: var(--primary);
@@ -19,6 +34,7 @@
   );
   --vp-home-hero-image-filter: blur(44px); */
 }
+
 
 #blocklyArea {
     /* width: 100%; */

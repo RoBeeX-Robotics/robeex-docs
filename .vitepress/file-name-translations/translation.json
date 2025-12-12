@@ -1,0 +1,111 @@
+{
+    "$schema": "./file-name-translation.schema.json",
+    "expansion-boards": {
+        "en": "🔌 Expansion Boards",
+        "fa": "🔌 بردهای توسعه"
+    },
+    "user-manuals": {
+        "en": "📚 User Manuals",
+        "fa": "📚 دفترچه‌های راهنما"
+    },
+    "specification": {
+        "en": "📘 Specification",
+        "fa": "📘 مشخصات"
+    },
+    "assembly": {
+        "en": "🛠️  Assembly",
+        "fa": "🛠️ مونتاژ"
+    },
+    "charging-and-battery": {
+        "en": "🔋 Charging And Battery",
+        "fa": "🔋 شارژ و باتری"
+    },
+    "install-application": {
+        "en": "💾 Install Application",
+        "fa": "💾 نصب برنامه"
+    },
+    "account-managment": {
+        "en": "👨‍💼 Account Managment",
+        "fa": "👨‍💼 مدیریت حساب"
+    },
+    "first-power-up": {
+        "en": "⚡ First Power Up",
+        "fa": "⚡ اولین روشن‌سازی"
+    },
+    "manual-flight": {
+        "en": "🕹️  Manual Flight",
+        "fa": "🕹️ پرواز دستی"
+    },
+    "settings": {
+        "en": "⚙️  Settings",
+        "fa": "⚙️ تنظیمات"
+    },
+    "gallery": {
+        "en": "🖼️  Gallery",
+        "fa": "🖼️ گالری"
+    },
+    "update": {
+        "en": "🔄 Update",
+        "fa": "🔄 به‌روزرسانی"
+    },
+    "imu-calibration": {
+        "en": "🎯 IMU Calibration",
+        "fa": "🎯 کالیبراسیون IMU"
+    },
+    "autonomous-fligh": {
+        "en": "🤖 Autonomous Fligh",
+        "fa": "🤖 پرواز خودکار"
+    },
+    "troubleshoot": {
+        "en": "🧰 Troubleshoot",
+        "fa": "🧰 رفع اشکال"
+    },
+    "faq": {
+        "en": "❓ FAQ",
+        "fa": "❓ پرسش‌های متداول"
+    },
+    "programming": {
+        "en": "💻 Programming",
+        "fa": "💻 برنامه‌نویسی"
+    },
+    "guides": {
+        "en": "Guides",
+        "fa": "راهنما ها"
+    },
+    "install-library": {
+        "en": "Install Library",
+        "fa": "نصب کتابخانه"
+    },
+    "first-program": {
+        "en": "First Program",
+        "fa": "اولین برنامه"
+    },
+    "introduction": {
+        "en": "Introduction",
+        "fa": "مقدمه"
+    },
+    "references": {
+        "en": "References",
+        "fa": "مراجع"
+    },
+    "api-references": {
+        "en": "API References",
+        "fa": "مراجع API"
+    },
+    "blockly": {
+        "en": "Blockly",
+        "fa": "بلاکلی"
+    },
+    "python": {
+        "en": "Python",
+        "fa": "پایتون"
+    },
+    "arduino": {
+        "en": "Arduino",
+        "fa": "آردوینو"
+    },
+    "overview": {
+        "en": "Overview",
+        "fa": "مرور سریع"
+    }
+}
