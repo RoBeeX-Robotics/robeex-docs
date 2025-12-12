@@ -17,21 +17,21 @@ hero:
 features:
   - title: راهنمای کاربر
     details: راهنمای کاربر
-    link: user-manuals/robeex-ai-drone/specification
+    link: user-manuals/robeex-ai-drone/specification.html
     icon: 
-        src: /book.png
-  - title: Blockly
-    link: programming/blockly/guides/introduction
+        src: /assets/book.png
+  - title: بلاکلی
+    link: programming/blockly/guides/introduction.html
     details: مستندات و آموزش‌های Blockly
     icon:
         src: /assets/blockly.png
-  - title: کتابخونه Python
+  - title: کتابخانه Python
     details: مستندات کتابخانه Python
-    link: programming/python/guides/install-library
+    link: programming/python/guides/install-library.html
     icon: 
         src: https://upload.wikimedia.org/wikipedia/commons/archive/c/c3/20220821155028%21Python-logo-notext.svg
-  - title: Arduino
-    link: programming/arduino
+  - title: کتابخانه Arduino
+    link: programming/arduino.html
     details: مستندات کتابخانه Arduino برای RoBeeX
     icon:
         src: https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/120px-Arduino_Logo.svg.png?20200922062315
