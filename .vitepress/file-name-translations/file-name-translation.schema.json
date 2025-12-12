@@ -1,0 +1,42 @@
+{
+  "title": "FileNameTranslationsSchema",
+  "type": "object",
+  "description": "A map where keys are original file names and values are objects mapping language codes to their translations.",
+  "additionalProperties": {
+    "type": "object",
+    "description": "An object containing translations for a single file name key.",
+    "patternProperties": {
+      "^[a-z]{2}$": {
+        "type": "string",
+        "description": "The translation string for the corresponding language code (e.g., 'en', 'fa')."
+      }
+    },
+    "minProperties": 1,
+    "required": [
+      "en"
+    ],
+    "examples": [
+      {
+        "en": "File Name",
+        "fa": "نام فایل"
+      },
+      {
+        "en": "File Name 2",
+        "fa": "فایل ۲"
+      }
+    ]
+  },
+  "minProperties": 1,
+  "examples": [
+    {
+      "file-name-1": {
+        "en": "File Name",
+        "fa": "نام فایل"
+      },
+      "file-name-2": {
+        "en": "File Name 2",
+        "fa": "فایل ۲"
+      }
+    }
+  ]
+}

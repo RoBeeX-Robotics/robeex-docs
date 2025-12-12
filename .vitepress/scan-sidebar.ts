@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { DefaultTheme } from 'vitepress/theme';
 import fm from 'front-matter';
+import translations from './file-name-translations';
 
 const INDEX_FILE = 'index.md';
 let excludeList = ['assets', 'public'];
@@ -13,8 +14,12 @@ if (process.env['NODE_ENV'] == 'production') {
  * Convert file or folder name into human-readable title
  * e.g., "get-started.md" -> "Get started"
  */
-function toTitle(name: string): string {
-    return name
+function toTitle(name: string, lang: string): string {
+    const translation = translations[name]?.[lang];
+
+    if (translation) return translation;
+
+    const title = name
         .replace(/^\[[^\]]+\]-/, '')
         .replace(/[-_]/g, ' ')
         .replace(/\.[^/.]+$/, '')
@@ -27,6 +32,8 @@ function toTitle(name: string): string {
         .replace(/\brc\b/gi, 'RC')
         .replace(/\bimu\b/gi, 'IMU')
         .replace(/\bfaq\b/gi, 'FAQ');
+
+    return title;
 }
 
 /**
@@ -34,8 +41,9 @@ function toTitle(name: string): string {
  */
 function scanDirectory(
     dir: string,
+    lang: string = '',
     basePath = '',
-    depth = 0,
+    depth = 0
 ): DefaultTheme.SidebarItem[] {
     const isFirst = depth === 0;
 
@@ -70,7 +78,7 @@ function scanDirectory(
             if (fs.existsSync(mdFile)) {
                 orderPriority =
                     fm<{ orderPriority: number }>(
-                        fs.readFileSync(mdFile).toString(),
+                        fs.readFileSync(mdFile).toString()
                     ).attributes.orderPriority || orderPriority;
             }
 
@@ -104,14 +112,16 @@ function scanDirectory(
             if (entry.isDir) {
                 const subItems = scanDirectory(
                     entry.fullPath,
+                    lang,
                     entry.relativePath,
-                    depth + 1,
+                    depth + 1
                 );
 
                 // const isLast =
 
                 let link: string | undefined = undefined;
-                const hasIndex = subItems?.[0]?.text == toTitle(INDEX_FILE);
+                const hasIndex =
+                    subItems?.[0]?.text == toTitle(INDEX_FILE, lang);
                 if (
                     hasIndex ||
                     subItems.findIndex((x) => x.items != undefined) == -1
@@ -121,10 +131,10 @@ function scanDirectory(
 
                 return {
                     text: isFirst
-                        ? toTitle(entry.name).toUpperCase()
-                        : toTitle(entry.name),
+                        ? toTitle(entry.name, lang).toUpperCase()
+                        : toTitle(entry.name, lang),
                     collapsed: !isFirst,
-                    link,
+                    link: link,
                     items: hasIndex ? subItems.slice(1) : subItems,
                 };
             }
@@ -135,8 +145,9 @@ function scanDirectory(
             return {
                 text: isFirst
                     ? name.split('-').join(' ').toUpperCase()
-                    : toTitle(name),
-                link, // make /index.md map to root
+                    : toTitle(name, lang),
+                // link, // make /index.md map to root
+                link: '/' + lang + link,
             };
         });
 
@@ -147,11 +158,17 @@ function scanDirectory(
 
 /**
  * Main function
+ *
+ * @param langPrefix e.g., 'en', 'fa'
  */
-function generateSidebar(): DefaultTheme.SidebarItem[] {
-    const srcPath = path.resolve('src');
-    const sidebarItems = scanDirectory(srcPath);
+export function generateSidebar(
+    langPrefix: string
+): DefaultTheme.SidebarItem[] {
+    const srcPath = path.resolve('src/' + langPrefix + '/');
+    const sidebarItems = scanDirectory(srcPath, langPrefix);
 
+    console.log(sidebarItems[0].items?.[0]);
+    // console.log(JSON.stringify(allNames, null, 4));
     //   const sidebar: SidebarItem = {
     //     text: 'User manuals',
     //     items: sidebarItems,
@@ -161,7 +178,7 @@ function generateSidebar(): DefaultTheme.SidebarItem[] {
 }
 
 // --- Run and output the result ---
-export const sidebar = generateSidebar();
+// export const sidebar = generateSidebar();
 // console.log(JSON.stringify(sidebar, null, 2));
 // console.log(sidebar);
 //
