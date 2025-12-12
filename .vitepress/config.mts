@@ -28,6 +28,7 @@ export default defineConfig({
 })(window, document, "clarity", "script", "uir0bpxaqd");
             `,
         ],
+        ["link", { rel: "icon", href: "/favicon.ico" }],
     ],
     locales: {
         root: {
