@@ -6,7 +6,10 @@ const defaultConfigs = {
     outline: {
         level: [2, 3],
     } as DefaultTheme.Outline,
-};
+    search: {
+        provider: "local",
+    }
+} as const;
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -86,6 +89,28 @@ export default defineConfig({
                     ...defaultConfigs.outline,
                     label: "فهرست مطالب",
                 },
+                search: {
+                    ...defaultConfigs.search,
+                    options: {
+                        translations: {
+                            button: {
+                                buttonText: "جستجو",
+                                buttonAriaLabel: "جستجو",
+                            },
+                            modal: {
+                                backButtonTitle: "بازگشت",
+                                displayDetails: "نمایش جزئیات",
+                                resetButtonTitle: "بازنشانی جستجو",
+                                noResultsText: "نتیجه‌ای یافت نشد",
+                                footer: {
+                                    selectText: "انتخاب",
+                                    navigateText: "حرکت",
+                                    closeText: "بستن",
+                                },
+                            }
+                        },
+                    },
+                },
             },
         },
     },
@@ -94,8 +119,6 @@ export default defineConfig({
     srcDir: "src",
     appearance: "force-dark",
     themeConfig: {
-        search: {
-            provider: "local",
-        },
+        search: defaultConfigs.search,
     },
 });
