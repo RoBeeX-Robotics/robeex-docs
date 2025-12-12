@@ -28,6 +28,17 @@ export default defineConfig({
 })(window, document, "clarity", "script", "uir0bpxaqd");
             `,
         ],
+        [
+            "script",
+            {
+                type: "text/javascript",
+            },
+            `
+            if (window.location.pathname === '/' || window.location.pathname.toLowerCase() === '/index.html') {
+                window.location.replace('/en/');
+            }
+            `,
+        ],
         ["link", { rel: "icon", href: "/favicon.ico" }],
     ],
     locales: {
