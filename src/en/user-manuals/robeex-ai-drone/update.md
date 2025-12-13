@@ -68,6 +68,6 @@ Once the update is complete (LEDs turn solid 🟢 Green), the drone will enter a
 
 | Status Description | RGB1 (Front Left) | RGB2 (Front Right) | RGB3 (Rear Left) | RGB4 (Rear Right) | Meaning |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Critical Error / Calibration Needed (Mode 1)** | Blinking 🟡🔴 | Blinking 🟡🔴 | Blinking 🟡🔴 | Blinking 🟡🔴 | **CRITICAL:** IMU calibration is required due to the update. You must immediately refer to the [**IMU Calibration**](/user-manuals/robeex-ai-drone/🎯-imu-calibration.md) page. |
+| **Critical Error / Calibration Needed (Mode 1)** | Blinking 🟡🔴 | Blinking 🟡🔴 | Blinking 🟡🔴 | Blinking 🟡🔴 | **CRITICAL:** IMU calibration is required due to the update. You must immediately refer to the [**IMU Calibration**](./imu-calibration.md) page. |
 | **Ready / Disconnected (Mode 2)** | Blinking ⚪ | Blinking ⚪ | Blinking 🔴 | Blinking 🔴 | Drone is updated and powered on, but the mobile device/laptop is **NOT** connected to the drone's Wi-Fi. |
 | **Ready / Connected (Mode 2)** | Blinking ⚪ | Blinking ⚪ | Blinking 🟢 | Blinking 🟢 | Drone is updated and ready. The mobile device/laptop **IS** successfully connected to the drone's Wi-Fi network. |

@@ -119,14 +119,14 @@ This tab is dedicated to maintaining the accuracy of the drone's critical flight
 | **Bottom Lidar Range Finder** | **🟢 Status: OK !** (Usually) | (No Button) | Status check for the sensor used for precision altitude holding and safe landing. This sensor typically does not require user calibration. |
 
 ::: tip
-For detailed, step-by-step instructions on performing these calibrations, including the IMU (Accelerometer and Gyro), please refer to the **[IMU Calibration](/user-manuals/robeex-ai-drone/🎯-imu-calibration.md)** page.
+For detailed, step-by-step instructions on performing these calibrations, including the IMU (Accelerometer and Gyro), please refer to the **[IMU Calibration](./imu-calibration.md)** page.
 :::
 
 ::: warning 🔴🟡 CRITICAL WARNING: Sensor Error
 
 If the drone's **RGB LEDs** start flashing alternating **RED** and **YELLOW** (🔴🟡), this indicates a **critical IMU sensor error** and confirms that the **Accelerometer and Gyro need immediate calibration.**
 
-* **Action Required:** You must immediately refer to the **[IMU Calibration](/user-manuals/robeex-ai-drone/🎯-imu-calibration.md)** page to resolve this.
+* **Action Required:** You must immediately refer to the **[IMU Calibration](./imu-calibration.md)** page to resolve this.
 :::
 
 
@@ -134,7 +134,7 @@ If the drone's **RGB LEDs** start flashing alternating **RED** and **YELLOW** (�
 
 ## 👤 Account Tab
 
-This section allows the user to view and manage their RoBeeX account profile. For detailed guidance on creating, accessing, and managing your profile, please refer to the **[Account Management](/user-manuals/robeex-ai-drone/👨‍💼-account-managment.md)** page.
+This section allows the user to view and manage their RoBeeX account profile. For detailed guidance on creating, accessing, and managing your profile, please refer to the **[Account Management](./account-managment.md)** page.
 
 <br>
 

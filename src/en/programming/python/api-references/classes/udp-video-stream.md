@@ -78,7 +78,7 @@ Opens the UDP socket and starts the stream.
 
 
 ##### Params:
-- <b>frame_size: [<b>`FrameSize`</b>](/programming/python/api-references/enums/frame-size#FrameSize) = FrameSize.SIZE_640x480</b> - The frame size as a FrameSize enum value.
+- <b>frame_size: [<b>`FrameSize`</b>](../enums/frame-size#FrameSize) = FrameSize.SIZE_640x480</b> - The frame size as a FrameSize enum value.
 - <b>jpeg_quality: int = 45</b> - The JPEG compression quality (0 to 100).
 ##### Returns:
 ```python

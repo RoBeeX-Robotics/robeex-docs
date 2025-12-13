@@ -13,7 +13,7 @@ const defaultConfigs = {
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    ignoreDeadLinks: true,
+    ignoreDeadLinks: false,
     head: [
         [
             "script",

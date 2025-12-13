@@ -42,10 +42,10 @@ async function translate(enContent: string) {
 
 async function translateFile(filePath: string) {
     const basePath = (lang: string) => 'src/' + lang;
-    // const filePath = '/user-manuals/robeex-ai-drone/🎯-imu-calibration.md';
-    // const filePath = '/user-manuals/robeex-ai-drone/🎯-imu-calibration.md';
-    // const filePath = '/user-manuals/robeex-ai-drone/🛠️-assembly.md';
-    // const filePath = '/user-manuals/robeex-ai-drone/📘-specification.md';
+    // const filePath = '/user-manuals/robeex-ai-drone/imu-calibration.md';
+    // const filePath = '/user-manuals/robeex-ai-drone/imu-calibration.md';
+    // const filePath = '/user-manuals/robeex-ai-drone/assembly.md';
+    // const filePath = '/user-manuals/robeex-ai-drone/specification.md';
 
     const en = await Bun.file(basePath('en') + filePath).text();
 

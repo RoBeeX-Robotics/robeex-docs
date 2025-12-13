@@ -347,7 +347,7 @@ Waits for the drone to reach the setpoint within the specified tolerances.
 ##### Params:
 - <b>pos_tolerance: float = 0.15</b> - The position tolerance in meters.
 - <b>yaw_tolerance: float = 0.2617993877991494</b> - The yaw tolerance in radians.
-- <b>ignore_axis: [<b>`IgnoreAxis`</b>](/programming/python/api-references/enums/ignore-axis#IgnoreAxis) = 0</b> - Axes to ignore during setpoint checks (bit mask).
+- <b>ignore_axis: [<b>`IgnoreAxis`</b>](../enums/ignore-axis#IgnoreAxis) = 0</b> - Axes to ignore during setpoint checks (bit mask).
 
 <br>
 

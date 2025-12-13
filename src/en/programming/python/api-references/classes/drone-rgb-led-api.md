@@ -54,7 +54,7 @@ Sets the color for a specific LED index.
 - <b>r: int</b> - Red intensity (0-255).
 - <b>g: int</b> - Green intensity (0-255).
 - <b>b: int</b> - Blue intensity (0-255).
-- <b>index: [<b>`MotorNumber`</b>](/programming/python/api-references/enums/motor-number#MotorNumber)</b> - LED index (-1 for disable, 0 for all, 1-4 for specific motors).
+- <b>index: [<b>`MotorNumber`</b>](../enums/motor-number#MotorNumber)</b> - LED index (-1 for disable, 0 for all, 1-4 for specific motors).
 
 <br>
 
@@ -96,7 +96,7 @@ Sets the mode of the LEDs (AUTO or MANUAL).
 
 
 ##### Params:
-- <b>mode: [<b>`RGBMode`</b>](/programming/python/api-references/enums/rgb-mode#RGBMode)</b> - The mode to set (RGBMode.AUTO or RGBMode.MANUAL).
+- <b>mode: [<b>`RGBMode`</b>](../enums/rgb-mode#RGBMode)</b> - The mode to set (RGBMode.AUTO or RGBMode.MANUAL).
 
 <br>
 

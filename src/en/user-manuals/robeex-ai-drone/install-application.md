@@ -72,7 +72,7 @@ Click the new **"Run anyway"** button to proceed with the installation of the Ro
 
 
 ## 👨‍💼 Creating and Accessing Your RoBeeX Account
-Your RoBeeX account is required for drone activation, managing your settings, and accessing the programming features within the RoBeeX App. To learn how to create and manage your account, continue reading this **[Account Management](/user-manuals/robeex-ai-drone/👨‍💼-account-managment.md)** page.
+Your RoBeeX account is required for drone activation, managing your settings, and accessing the programming features within the RoBeeX App. To learn how to create and manage your account, continue reading this **[Account Management](./account-managment.md)** page.
 
 ::: warning
 **Software Version:** Always use the **latest available version** of the RoBeeX App for optimal performance, stability, and access to all features.

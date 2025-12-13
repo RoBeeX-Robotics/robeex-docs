@@ -7,7 +7,7 @@ orderPriority: 65
 Once your drone is fully activated and calibrated, you can begin manual flight operations using the RoBeeX App interface.
 
 ::: warning Account Requirement
-If you have not yet logged into your RoBeeX account, you will need to do so before proceeding. Please refer to the **[Account Management](/user-manuals/robeex-ai-drone/👨‍💼-account-managment.md)** page for detailed steps on how to create, access, and manage your account.
+If you have not yet logged into your RoBeeX account, you will need to do so before proceeding. Please refer to the **[Account Management](./account-managment.md)** page for detailed steps on how to create, access, and manage your account.
 :::
 
 
@@ -20,7 +20,7 @@ This procedure establishes the direct Wi-Fi link between your device and the dro
 
 
 1.  **Power On:**
-    * **Power On:** Turn on your RoBeeX AI Drone. (For detailed instructions on battery charging , installation , and powering on the drone, please refer to **[charging and battery](/user-manuals/robeex-ai-drone/🔋-charging-and-battery.md)**)
+    * **Power On:** Turn on your RoBeeX AI Drone. (For detailed instructions on battery charging , installation , and powering on the drone, please refer to **[charging and battery](./charging-and-battery.md)**)
 2.  **Wi-Fi Connection:**
     * **Step 1:** Go to your device's **Settings** (⚙️) → **Wi-Fi**.
     * **Step 2:** Select the drone's Wi-Fi network (e.g., **ROBEEX_AI_DRONE_XXXXXX**).
@@ -62,7 +62,7 @@ To begin flying, press the **"Manual Control"** button located on the main appli
 
 If the drone's **RGB LEDs** start flashing alternating **RED** and **YELLOW** (🔴🟡), this indicates a **critical sensor error** and confirms that the **IMU (Inertial Measurement Unit) needs immediate calibration.**
 
-* **Action Required:** You must immediately refer to the **[IMU Calibration](/user-manuals/robeex-ai-drone/🎯-imu-calibration.md)**
+* **Action Required:** You must immediately refer to the **[IMU Calibration](./imu-calibration.md)**
 :::
 
 
@@ -180,7 +180,7 @@ Pitch controls the forward and backward movement of the drone. The drone tilts i
 | Button | Icon | Function | Notes |
 | :--- | :--- | :--- | :--- |
 | **Back Button** | <img src="/assets/back-button.png"> | Returns to the previous screen or main dashboard. | - |
-| **Gallery Access** | <img src="/assets/gallery-button.png"> | Opens the in-app media gallery to view saved files. | The number in a red circle below the Gallery button counts up with every photo taken. Refer to the [Gallery Menu](/user-manuals/robeex-ai-drone/🖼️-gallery.md) |
+| **Gallery Access** | <img src="/assets/gallery-button.png"> | Opens the in-app media gallery to view saved files. | The number in a red circle below the Gallery button counts up with every photo taken. Refer to the [Gallery Menu](./gallery.md) |
 | **Video Record** | <img src="/assets/record-button.png" > | Toggles video recording on/off. | During recording, a **Stop** button and a **recording time** counter appear below the camera view. |
 | **Photo Capture** | <img src="/assets/shutter-button.png" > | Takes a single still photograph. | The number in a red circle below the Gallery button counts up with every photo taken. |
 
@@ -193,7 +193,7 @@ Pitch controls the forward and backward movement of the drone. The drone tilts i
 
 **Video Recording Status:**
 When recording is active, the recording time and a **Stop** button appear at the bottom of the flight interface. The time displays the running counter in minutes and seconds (e.g., `00:03`). Pressing the **Stop** button immediately halts the video recording and saves the file.
-**For see all captured photos and videos, refer to the [Gallery Menu](/user-manuals/robeex-ai-drone/🖼️-gallery.md)**.
+**For see all captured photos and videos, refer to the [Gallery Menu](./gallery.md)**.
 :::
 
 
@@ -201,13 +201,13 @@ When recording is active, the recording time and a **Stop** button appear at the
 
 | Button | Icon | Function | Notes |
 | :--- | :---: | :--- | :--- |
-| **Settings Menu** | <img src="/assets/setting-button.jpg" width="400"> | This central configuration hub is used to manage drone behavior, safety parameters, sensor calibration, account details, and view system information. | To access the Settings Menu and understand its configuration options, please refer to the **[Settings Menu](/user-manuals/robeex-ai-drone/⚙️-settings.md)**. |
+| **Settings Menu** | <img src="/assets/setting-button.jpg" width="400"> | This central configuration hub is used to manage drone behavior, safety parameters, sensor calibration, account details, and view system information. | To access the Settings Menu and understand its configuration options, please refer to the **[Settings Menu](./settings.md)**. |
 
 
  ## 💡Bottom Flash LED Button
 | Button | Icon | Function | Notes |
 | :--- | :--- | :--- | :--- |
-| **Bottom Flash LED** | <img src="/assets/flash-bottom.jpg" width="250" > | Toggles the **Bottom Flash Light LED** on or off. This light aids in low-light landing and ground visibility. | The brightness level is configurable in the **Settings Menu** via the [Settings Menu](/user-manuals/robeex-ai-drone/⚙️-settings.md).  |
+| **Bottom Flash LED** | <img src="/assets/flash-bottom.jpg" width="250" > | Toggles the **Bottom Flash Light LED** on or off. This light aids in low-light landing and ground visibility. | The brightness level is configurable in the **Settings Menu** via the [Settings Menu](./settings.md).  |
 
 ::: tip
 **Advanced Control:** Bottom Flash Light LED can also be controlled and programmed using coding languages such as **Blockly, Python, and Arduino.**

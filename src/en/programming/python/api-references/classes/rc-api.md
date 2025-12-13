@@ -2,11 +2,11 @@
 Remote Control API
 used for interaction with the drone
 ## Properties:
-### nav: [<b>`DroneNavAPI`</b>](/programming/python/api-references/classes/drone-nav-api#DroneNavAPI)
+### nav: [<b>`DroneNavAPI`</b>](../classes/drone-nav-api#DroneNavAPI)
 Handles drone movements
-### rgb: [<b>`DroneRGBLedApi`</b>](/programming/python/api-references/classes/drone-rgb-led-api#DroneRGBLedApi)
+### rgb: [<b>`DroneRGBLedApi`</b>](../classes/drone-rgb-led-api#DroneRGBLedApi)
 Handles interactions with Drone RGB LEDs
-### bottom_flash_led: [<b>`DroneBottomFlashLedApi`</b>](/programming/python/api-references/classes/drone-bottom-flash-led-api#DroneBottomFlashLedApi)
+### bottom_flash_led: [<b>`DroneBottomFlashLedApi`</b>](../classes/drone-bottom-flash-led-api#DroneBottomFlashLedApi)
 Handles interactions with Drone Bottom Flash LED
 ## Methods:
 ### \_\_init\_\_

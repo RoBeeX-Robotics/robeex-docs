@@ -2,4 +2,4 @@
 orderPriority: 1
 ---
 
-[نسخه English](/en/programming/python/references/overview)
+[نسخه English](/en/programming/python/api-references/overview)

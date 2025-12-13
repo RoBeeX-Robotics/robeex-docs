@@ -1,7 +1,7 @@
 # Class <b>`RobeexAIDrone`</b> { #RobeexAIDrone }
 The main class to interact with the Robeex AI Drone.
 ## Properties:
-### rc: [<b>`RcApi`</b>](/programming/python/api-references/classes/rc-api#RcApi)
+### rc: [<b>`RcApi`</b>](../classes/rc-api#RcApi)
 Remote Control API
 used for interaction with the drone
 ## Methods:
@@ -12,7 +12,7 @@ def VideoCapture()
 Creates and returns a `UDPVideoStream` instance
 
 
-##### Returns: [<b>`UDPVideoStream`</b>](/programming/python/api-references/classes/udp-video-stream#UDPVideoStream)
+##### Returns: [<b>`UDPVideoStream`</b>](../classes/udp-video-stream#UDPVideoStream)
  UDP Video Stream instance
 
 <br>

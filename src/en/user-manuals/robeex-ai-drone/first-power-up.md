@@ -25,8 +25,8 @@ Before starting the activation process, ensure the following conditions are met:
 
 
 ::: info
-1.  **RoBeeX App Installed:** You have successfully installed the RoBeeX App on your mobile or desktop device. (Refer to [Install Application](/user-manuals/robeex-ai-drone/💾-install-application.md) page). 
-2.  **Account Logged In:** You have successfully created and logged into your RoBeeX account within the app.To learn how to create and manage your account, continue reading this **[Account Management](/user-manuals/robeex-ai-drone/👨‍💼-account-managment.md)** page.
+1.  **RoBeeX App Installed:** You have successfully installed the RoBeeX App on your mobile or desktop device. (Refer to [Install Application](./install-application.md) page). 
+2.  **Account Logged In:** You have successfully created and logged into your RoBeeX account within the app.To learn how to create and manage your account, continue reading this **[Account Management](./account-managment.md)** page.
 3.  **Internet Access:** Your device has an active internet connection.
 4.  **Wi-Fi Credentials**: You must know the SSID (Network Name) and Password of the Wi-Fi network, which must operate on the **`2.4 GHz frequency band`**, that the drone will use for activation.
 5.  **Battery Level:** **WARNING:** The drone's battery must be charged to **at least 50%** before starting the activation or update process.
@@ -85,4 +85,4 @@ Once all four LEDs are **Solid Green**, the RoBeeX drone is activated and update
 
 1.  **Confirmation:** The activation is complete when the **RGB LEDs begin flashing red and yellow.**
 2.  **IMU Calibration:** The flashing red and yellow LEDs confirm that the drone now requires sensor calibration.
-3.  **Next Step:** Please refer to the [**IMU Calibration**](/user-manuals/robeex-ai-drone/🎯-imu-calibration.md) page **immediately** to calibrate the Accelerometer and Gyroscope for stable and safe flight.
+3.  **Next Step:** Please refer to the [**IMU Calibration**](./imu-calibration.md) page **immediately** to calibrate the Accelerometer and Gyroscope for stable and safe flight.

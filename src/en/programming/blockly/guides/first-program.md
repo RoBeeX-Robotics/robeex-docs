@@ -130,11 +130,3 @@ Add screenshots here if available: `assets/blockly/first-program-stack.png` (or 
 - If something's not working, open an issue on the project repository or check the community forum for device-specific tips.
 
 ---
-
-If you'd like, I can:
-
-- add a screenshot and place it in the repo (please provide an image or let me capture the editor), or
-- create a matching downloadable example `.json` / `.blocks` file you can import into the editor.
-
-Which would you prefer next?
-
