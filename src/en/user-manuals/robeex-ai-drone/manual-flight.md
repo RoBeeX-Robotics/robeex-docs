@@ -44,7 +44,7 @@ This procedure establishes the direct Wi-Fi link between your device and the dro
 
 To begin flying, press the **"Manual Control"** button located on the main application dashboard. This will open the flight screen, which contains the virtual joysticks and control inputs.
 
-<image width="700" height="100" src="/assets/manual-flight.jpg"></image>
+![](/assets/manual-flight.jpg)
 
 
 ## ⚠️ Pre-Flight Requirements & Safety Checks
@@ -131,7 +131,7 @@ The **RoBeeX AI Drone** is controlled using two virtual joysticks on the mobile 
 
 Throttle controls the vertical movement of the drone. It adjusts the total power supplied to all four motors simultaneously.
 
-<image width="700" height="100" src="/assets/throttle.png"></image>
+![](/assets/throttle.png)
 * **Function:** **Altitude** (Ascend / Descend)
 * **Action:**
     * **Push Up:** Increases total motor power, causing the drone to **Ascend**.
@@ -143,7 +143,7 @@ Throttle controls the vertical movement of the drone. It adjusts the total power
 
 Yaw controls the rotation of the drone around its central vertical axis. It changes the direction the nose of the drone is facing without changing its horizontal position.
 
-<image width="700" height="100" src="/assets/yaw.png"></image>
+![](/assets/yaw.png)
 * **Function:** **Rotation (Heading)**
 * **Action:**
     * **Push Left:** Rotates the drone **Counter-Clockwise (Left)**.
@@ -155,7 +155,7 @@ Yaw controls the rotation of the drone around its central vertical axis. It chan
 
 Roll controls the side-to-side (lateral) movement of the drone. The drone slightly tilts its body to the left or right to create a sideways thrust.
 
-<image width="700" height="100" src="/assets/roll.png"></image>
+![](/assets/roll.png)
 * **Function:** **Lateral Movement (Strafe)**
 * **Action:**
     * **Push Left:** Tilts the drone left, causing it to move **Left (Strafe)**.
@@ -167,7 +167,7 @@ Roll controls the side-to-side (lateral) movement of the drone. The drone slight
 
 Pitch controls the forward and backward movement of the drone. The drone tilts its nose up or down to create forward or backward thrust.
 
-<image width="700" height="100" src="/assets/pitch.png"></image>
+![](/assets/pitch.png)
 * **Function:** **Translational Movement (Forward / Backward)**
 * **Action:**
     * **Push Up:** Tilts the nose down, causing the drone to move **Forward**.
@@ -223,7 +223,7 @@ The RoBeeX App uses dedicated on-screen buttons to safely initiate automatic tak
 1.  **Preparation:** Place the drone on a **flat, level, and clear** surface.
 2.  **Initiation:** Tap the **"Auto Takeoff"** button (<img src="/assets/take-off-small.png" style="display: inline; width: 40px; height: 40px; vertical-align: text-bottom;">) on the right side of the flight screen.
 3.  **Confirmation Pop-up:** A pop-up window will appear, displaying a large **"Take Off"** button. (See image below).
-<image width="700" height="100" src="/assets/take-off-dialog.png"></image>
+![](/assets/take-off-dialog.png)
 4.  **Execution:** **Press and hold** the central **"Take Off"** button **until the yellow circle indicator is complete** (the yellow circle around the button fills up).
     * The drone will automatically start its motors and ascend to a safe altitude of **0.5 meters (50 cm)**, where it will hover.
 
@@ -236,7 +236,7 @@ The RoBeeX App uses dedicated on-screen buttons to safely initiate automatic tak
 1.  **Positioning:** Fly the drone back to the desired landing area, ensuring the surface is flat and clear of obstacles.
 2.  **Initiation:** Tap the **"Auto Land"** button (<img src="/assets/landig-small.png" style="display: inline; width: 40px; height: 40px; vertical-align: text-bottom;">) on the right side of the flight screen.
 3.  **Confirmation Pop-up:** A pop-up window will appear, displaying a large **"Land"** button. (See image below).
-<image width="700" height="100" src="/assets/landing-dialog.jpg"></image>
+![](/assets/landing-dialog.jpg)
 4.  **Execution:** **Press and hold** the central **"Land"** button to begin the procedure.
     * The drone will automatically descend, reduce motor speed, and **shut off the motors immediately upon contact with the ground.**
 

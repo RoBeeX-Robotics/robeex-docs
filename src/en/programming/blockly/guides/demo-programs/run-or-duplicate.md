@@ -18,7 +18,7 @@ By Default Demo Programs are not editable and you should Duplicate them to be ab
 
 ## Edit / Duplicate the Demo program
 
-![Duplicate a program](/images/blockly-programming/duplicate-button.png)
+![Duplicate a program](/assets/blockly-programming/duplicate-button.png)
 
 1. Click on the top-right Option button
 2. Select `Duplicate`

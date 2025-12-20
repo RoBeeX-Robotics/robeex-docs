@@ -34,11 +34,11 @@ orderPriority: 85
 
 <br>
 🔴 چراغ قرمز: باتری در حال شارژ شدن است
-<image width="300" height="100" src="/assets/charging.jpg"></image>
+![](/assets/charging.jpg)
 
 <br>
 🟢 چراغ سبز: کاملاً شارژ شده
-<image width="300" height="315" src="/assets/charged.jpg"></image>
+![](/assets/charged.jpg)
 <br>
 
 هنگامی که LED سبز شد، باتری را از برد شارژ جدا کنید.

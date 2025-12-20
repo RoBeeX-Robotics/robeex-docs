@@ -34,5 +34,5 @@ RoBeeX App → Programming → صفحه Blockly
 - [ساخت یک برنامه جدید !!!](./making-your-first-program)
 - انتخاب برنامه‌های خودتان برای **ویرایش** آنها
 
-![مدیر برنامه‌های Blockly](/images/blockly-programming/blockly-program-manager-fa.png)
+![مدیر برنامه‌های Blockly](/assets/blockly-programming/blockly-program-manager-fa.png)
 

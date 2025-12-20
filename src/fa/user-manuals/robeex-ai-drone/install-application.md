@@ -22,7 +22,7 @@ orderPriority: 80
 
 👉 [**دانلود اپلیکیشن اندروید RoBeeX**](https://robeex.com/downloads)
 
-[<image src="/assets/android-app.png" width="150"></image>](https://robeex.com/downloads)
+[![](/assets/android-app.png)](https://robeex.com/downloads)
 
 ### مراحل نصب
 
@@ -37,7 +37,7 @@ orderPriority: 80
 
 👉 [**دانلود اپلیکیشن ویندوز RoBeeX**](https://robeex.com/downloads)
 
-[<image src="/assets/windows-app.png" width="150"></image>](https://robeex.com/downloads)
+[![](/assets/windows-app.png)](https://robeex.com/downloads)
 
 ### مراحل نصب
 
@@ -49,14 +49,14 @@ orderPriority: 80
 اگر سیستم عامل شما (PC/لپ‌تاپ) در طول نصب هشداری مشابه **"Windows protected your PC"** (ویندوز از رایانه شما محافظت کرد) نمایش می‌دهد، برای ادامه مراحل زیر را دنبال کنید:
 
 در صفحه هشدار که حاوی گزینه **"Don't run"** (اجرا نشود) است، روی لینک **"More info"** (اطلاعات بیشتر) کلیک کنید.
-<image src="/assets/windows-app-01.png" width="500"></image>
+![](/assets/windows-app-01.png)
 <br>
 
 بعد از کلیک روی **"More info"** (اطلاعات بیشتر)، یک دکمه جدید (معمولاً با برچسب **"Run anyway"** (به هر حال اجرا کن)) در پایین پنجره ظاهر می‌شود.
 برای ادامه نصب اپلیکیشن RoBeeX روی دکمه جدید **"Run anyway"** (به هر حال اجرا کن) کلیک کنید.
-<image src="/assets/windows-app-02.png" width="500"></image>
+![](/assets/windows-app-02.png)
 <br>
-<image src="/assets/windows-app-03.png" width="500"></image>
+![](/assets/windows-app-03.png)
 :::
 
 3. پس از نصب، اپلیکیشن **RoBeeX** را از میان‌بر روی دسکتاپ یا منوی Start باز کنید.

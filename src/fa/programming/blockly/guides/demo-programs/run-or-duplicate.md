@@ -18,7 +18,7 @@ orderPriority: 100
 
 ## ویرایش / کپی برنامه نمایشی
 
-![کپی یک برنامه](/images/blockly-programming/duplicate-button.png)
+![کپی یک برنامه](/assets/blockly-programming/duplicate-button.png)
 
 1. روی دکمه گزینه بالا-راست کلیک کنید
 2. `کپی` را انتخاب کنید

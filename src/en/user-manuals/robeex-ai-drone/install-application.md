@@ -23,7 +23,7 @@ Download and install the **RoBeeX App** for your Android device using the direct
 
 👉 [**Download RoBeeX Android App**](https://robeex.com/downloads)
 
-[<image src="/assets/android-app.png" width="150"></image>](https://robeex.com/downloads)
+[![](/assets/android-app.png)](https://robeex.com/downloads)
 
 
 
@@ -42,7 +42,7 @@ Download and install the **RoBeeX App** for Windows desktop environments:
 
 👉 [**Download RoBeeX Windows App**](https://robeex.com/downloads)
 
-[<image src="/assets/windows-app.png" width="150"></image>](https://robeex.com/downloads)
+[![](/assets/windows-app.png)](https://robeex.com/downloads)
 
 
 
@@ -57,14 +57,14 @@ Download and install the **RoBeeX App** for Windows desktop environments:
 If your operating system (PC/laptop) displays a security warning similar to **"Windows protected your PC"** during the installation, follow these steps to proceed:
 
 On the warning screen that contains the **"Don't run"** option, click the **"More info"** link.
-<image src="/assets/windows-app-01.png" width="500"></image>
+![](/assets/windows-app-01.png)
 <br>
 
 After clicking **"More info,"** a new button (usually labeled **"Run anyway"**) will appear at the bottom of the window.
 Click the new **"Run anyway"** button to proceed with the installation of the RoBeeX application.
-<image src="/assets/windows-app-02.png" width="500"></image>
+![](/assets/windows-app-02.png)
 <br>
-<image src="/assets/windows-app-03.png" width="500"></image>
+![](/assets/windows-app-03.png)
 :::
 
 3.  After installation, open the **RoBeeX App** from your desktop shortcut or Start menu.

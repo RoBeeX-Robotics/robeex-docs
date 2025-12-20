@@ -40,4 +40,4 @@ Here you can manage your blockly programs:
 - [Make a new program !!!](./making-your-first-program)
 - Select your own programs to **modify** them
 
-![Blockly program manager](/images/blockly-programming/blockly-program-manager.png)
+![Blockly program manager](/assets/blockly-programming/blockly-program-manager.png)

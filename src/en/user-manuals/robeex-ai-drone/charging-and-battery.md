@@ -36,11 +36,11 @@ LED indicators on the charger board:
 
 <br>
 🔴 Red light: Battery is charging
-<image width="300" height="100" src="/assets/charging.jpg"></image>
+![](/assets/charging.jpg)
 
 <br>
 🟢 Green light: Fully charged
-<image width="300" height="315" src="/assets/charged.jpg"></image>
+![](/assets/charged.jpg)
 <br>
 
 When the LED turns green, disconnect the battery from the charger board.

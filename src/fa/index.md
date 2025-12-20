@@ -19,12 +19,12 @@ features:
     details: راهنمای کاربر
     link: user-manuals/robeex-ai-drone/specification.html
     icon: 
-        src: /assets/book.png
+        src: /icon/book.png
   - title: بلاکلی
     link: programming/blockly/guides/introduction.html
     details: مستندات و آموزش‌های Blockly
     icon:
-        src: /assets/blockly.png
+        src: /icon/blockly.png
   - title: کتابخانه Python
     details: مستندات کتابخانه Python
     link: programming/python/guides/install-library.html

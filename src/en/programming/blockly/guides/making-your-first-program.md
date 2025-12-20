@@ -46,7 +46,7 @@ Every Blockly program starts running from the this block
 <g data-id="Rj1a@rI0kMB4GBq?1;()" class="blocklyDraggable" transform=""><path class="blocklyPathDark" transform="translate(1,1)" fill="#c29b00" d=" m 0,15  h 0  c 30,-15  70,-15  100,0  h 56.02378845214844  v 20  H 156.02378845214844  V 20  H 156.02378845214844  V 45  H 156.02378845214844  V 45  V 49  h -126.52378845214844  l -6,4  -3,0  -6,-4  h -6.5 a 8 8 0 0,1 -8,-8 z
 "></path><path class="blocklyPath" stroke="none" fill="#f2c200" d=" m 0,15  h 0  c 30,-15  70,-15  100,0  h 56.02378845214844  v 20  H 156.02378845214844  V 20  H 156.02378845214844  V 45  H 156.02378845214844  V 45  V 49  h -126.52378845214844  l -6,4  -3,0  -6,-4  h -6.5 a 8 8 0 0,1 -8,-8 z
 "></path><path class="blocklyPathLight" stroke="#f6d44d" d=" m 0,15  m 0.5,0.5  c 17.8,-9.2  45.3,-14.9  75,-8.7  M 100.5,15.5  H 155.52378845214844  H 155.52378845214844  M 0,49  m 2.6966991411008934,-2.6966991411008934 a 7.5 7.5 0 0,1 -2.1966991411008934,-5.303300858899107  V 15.5 
-"></path><g transform="translate(10,20)"><text class="blocklyText" x="0" y="13">When</text></g><g transform="translate(59.889617919921875,20)"><image height="24px" width="24px" alt="logo" xlink:href="/assets/icon/play-arrow.svg"></image></g><g transform="translate(93.88961791992188,20)"><text class="blocklyText" x="0" y="13">Clicked</text></g></g>
+"></path><g transform="translate(10,20)"><text class="blocklyText" x="0" y="13">When</text></g><g transform="translate(59.889617919921875,20)"><image height="24px" width="24px" alt="logo" xlink:href="/icon/play-arrow.svg"></image></g><g transform="translate(93.88961791992188,20)"><text class="blocklyText" x="0" y="13">Clicked</text></g></g>
             </svg>
         </div>
     </div>
@@ -58,7 +58,7 @@ Every Blockly program starts running from the this block
 ## Step-by-step: build the LED sequence
 
 1. Add a forever loop
-	- From the `Loops` category, drag a `repeat while true` block and snap it under the <code>When<img height="15px" width="15px" alt="logo" style="margin: 0 4px;display:inline;vertical-align: text-bottom;" src="/assets/icon/play-arrow.svg" />Clicked</code> block.
+	- From the `Loops` category, drag a `repeat while true` block and snap it under the <code>When<img height="15px" width="15px" alt="logo" style="margin: 0 4px;display:inline;vertical-align: text-bottom;" src="/icon/play-arrow.svg" />Clicked</code> block.
 	- This keeps the LED sequence running until you stop the device.
 
 <div style="padding: 5px 0;">
@@ -166,7 +166,7 @@ Every Blockly program starts running from the this block
 </div>
 
 6. Test the program
-	- Click on the Run Button <code><img height="15px" width="15px" alt="logo" style="margin: 0 4px;display:inline;vertical-align: text-bottom;" src="/assets/icon/play-arrow.svg" /></code>.
+	- Click on the Run Button <code><img height="15px" width="15px" alt="logo" style="margin: 0 4px;display:inline;vertical-align: text-bottom;" src="/icon/play-arrow.svg" /></code>.
 
 ## Example block layout (visual)
 
@@ -179,13 +179,13 @@ Imagine this vertical stack inside the workspace:
 	 - Set RGB LED Color to `Red`
 	 - Wait `500 ms`
 
-![Blinker program final image](/images/blockly-programming/blinker-program.png)
+![Blinker program final image](/assets/blockly-programming/blinker-program.png)
 
 ## Common issues & troubleshooting
 
-- Disabled Run Button <code><img height="15px" width="15px" alt="logo" style="margin: 0 4px;display:inline;vertical-align: text-bottom;" src="/assets/icon/play-arrow.svg" /></code> 
+- Disabled Run Button <code><img height="15px" width="15px" alt="logo" style="margin: 0 4px;display:inline;vertical-align: text-bottom;" src="/icon/play-arrow.svg" /></code> 
   - [Delete](./blockly-editor-environment#deleting-blocks-recycle-bin) any dangling blocks (blocks that are not connected to any other blocks / left alone)
-    ![Dangling Block in the blockly workspace](/images/blockly-programming/dangling-block.png)
+    ![Dangling Block in the blockly workspace](/assets/blockly-programming/dangling-block.png)
 
 - No connection to the device
   - **Turn Off / Disable any kind of `VPN / Proxy`** as it may interfere with RoBeeX WiFi Network

@@ -7,7 +7,7 @@ orderPriority: 79
 Your RoBeeX account is required for drone activation, managing your settings, and accessing the programming features within the RoBeeX App.
 
 To begin the process, click the prominent **"`Login/Register`"** yellow button on the main app screen.
-<image src="/assets/login-register.png" width="500"></image>
+![](/assets/login-register.png)
 
 
 ## ⚙️👤 Account Login & Access Options
@@ -20,7 +20,7 @@ If you already have a RoBeeX account:
 
 * Enter your registered **Email** and **Password** in the designated fields.
 * Click the **`Login`** button.
-<image src="/assets/login-account.png" width="500"></image>
+![](/assets/login-account.png)
 
 
 ### 2. New Account Registration
@@ -28,7 +28,7 @@ If you already have a RoBeeX account:
 If you do not yet have a RoBeeX account, you must create one:
 
 1.  Click the **"`Don't have an account? Click here to create one`"** link.
-<image src="/assets/create-account.png" width="500"></image>
+![](/assets/create-account.png)
 <br>
 
 2.  Fill in the registration form with the following required information:
@@ -40,7 +40,7 @@ If you do not yet have a RoBeeX account, you must create one:
     * **Birth Date**
     * **Gender**
 
-    <image src="/assets/create-account-field.png" width="500"></image>
+    ![](/assets/create-account-field.png)
 3.  Press the **"`Register`"** button to complete your account creation.
 
 ### 3. Forgotten Password Recovery
