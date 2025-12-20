@@ -107,5 +107,25 @@
     "overview": {
         "en": "Overview",
         "fa": "مرور سریع"
+    },
+    "blockly-editor-environment": {
+        "en": "Blockly Editor Environment",
+        "fa": "محیط ویرایشگر بلاکلی"
+    },
+    "making-your-first-program": {
+        "en": "Making Your First Program",
+        "fa": "ساخت اولین برنامه"
+    },
+    "demo-programs": {
+        "en": "Demo Programs",
+        "fa": "برنامه‌های نمایشی"
+    },
+    "run-or-duplicate": {
+        "en": "Run or Duplicate",
+        "fa": "اجرا یا تکثیر"
+    },
+    "face-tracking": {
+        "en": "Face Tracking",
+        "fa": "ردیابی صورت"
     }
 }
