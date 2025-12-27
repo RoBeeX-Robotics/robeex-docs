@@ -4,14 +4,14 @@ orderPriority: 70
 
 # ⚡ First Power-Up: Device Initial Activation and Setup (Mandatory OTA Update)
 
-After initial assembly and setup, the RoBeeX AI drone **`must be activated by the owner`** upon first power-up. This process automatically performs a mandatory Over-The-Air (OTA) firmware update.
+After assembly and initial setup, the device **`must be activated by the owner`** during the first power-on.
+This process includes the following:
+
+- Automatic Over-the-Air (OTA) updates for the aircraft
+- Registering the device in the name of the builder/manufacturer
 
 ::: warning
 **CRITICAL REQUIREMENT:** This activation and update step is **required** for the device to be functional and cleared for flight.
-:::
-
-::: warning
-**NETWORK REQUIREMENT:** The RoBeeX drone **only supports** connection to Wi-Fi access points operating on the **`2.4 GHz frequency band`**. It is incompatible with 5 GHz Wi-Fi networks.
 :::
 
 ::: tip
@@ -34,12 +34,13 @@ Before starting the activation process, ensure the following conditions are met:
 
 ## 1. 🌐 Initial Setup & Generating the Activation QR Code
 
-The RoBeeX drone uses a Wi-Fi connection and a generated QR code to perform its initial network setup and activation. This process links your drone to your local Wi-Fi network.
+RoBeeX requires an internet connection to perform automatic OTA updates and device registration. Therefore, you must provide your Wi-Fi credentials to RoBeeX using a QR code.
 
 ---
 
 ::: tip
-**🎥 Important Activation Guide:** Please **watch this entire video carefully** and follow the steps exactly as shown for the activation, firmware update, and IMU calibration of your RoBeeX AI Drone. The detailed instructions below serve as a quick recheck and precise reference to ensure the process is completed accurately.
+#### 🎥 Important Activation Guide
+Please **watch this entire video carefully** and follow the steps exactly as shown for the activation, firmware update, and IMU calibration of your RoBeeX AI Drone. The detailed instructions below serve as a quick recheck and precise reference to ensure the process is completed accurately.
 :::
 
 ### 🎥 Video Guide: How to activate the drone, update the firmware and calibrate the IMU
@@ -56,7 +57,15 @@ The RoBeeX drone uses a Wi-Fi connection and a generated QR code to perform its 
 4.  Click the **"Generate QR Code"** button.
     * A unique QR code containing your network credentials will appear on the screen. **Keep this code visible** for the next step of the physical drone activation process.
 
+::: warning
+Ensure your Wi-Fi has **Internet Access** 🌐
+:::
 
+::: warning
+Your Wi-Fi Access point should operating on the **`2.4 GHz frequency band`**
+
+RoBeeX AI Drone **`only supports 2.4GHz Wi-Fi network`** and **`not 5GHz`**
+:::
 
 ## 2. 🚀 Drone Activation and Update
 

@@ -23,7 +23,7 @@ Download and install the **RoBeeX App** for your Android device using the direct
 
 👉 [**Download RoBeeX Android App**](https://robeex.com/downloads)
 
-[![](/assets/android-app.png)](https://robeex.com/downloads)
+[![Download Android App](/assets/android-app.png)](https://robeex.com/downloads)
 
 
 
@@ -64,6 +64,7 @@ After clicking **"More info,"** a new button (usually labeled **"Run anyway"**) 
 Click the new **"Run anyway"** button to proceed with the installation of the RoBeeX application.
 ![](/assets/windows-app-02.png)
 <br>
+
 ![](/assets/windows-app-03.png)
 :::
 

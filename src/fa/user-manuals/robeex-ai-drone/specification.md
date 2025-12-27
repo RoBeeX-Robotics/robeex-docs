@@ -2,7 +2,7 @@
 orderPriority: 100
 ---
 
-# پهپاد هوش مصنوعی RoBeeX
+# ربات پرنده هوشمند برنامه پذیر - RoBeeX
 
 ![RoBeeX Drone](/assets/robeex_01.png)
 

@@ -20,7 +20,7 @@ to purchase official replacements.
 <video src="/assets/battery-charging.webm" controls loop autoplay muted playsinline width="500"></video>
 
 
-::: tip
+::: warning
 Do not charge the battery immediately after flight — allow it to cool first.
 :::
 
@@ -36,11 +36,13 @@ LED indicators on the charger board:
 
 <br>
 🔴 Red light: Battery is charging
-![](/assets/charging.jpg)
+
+![Red light: Battery is charging](/assets/charging.jpg)
 
 <br>
-🟢 Green light: Fully charged
-![](/assets/charged.jpg)
+🟢 Green light: Battery is Fully charged
+
+![Green light: Battery is Fully charged](/assets/charged.jpg)
 <br>
 
 When the LED turns green, disconnect the battery from the charger board.
@@ -71,28 +73,26 @@ You can check the battery charge percentage in **two ways**:
 
  1. Checking on RoBeeX App Software
 
-Open the **RoBeeX App** and view the **battery status** on the main screen.
+    Open the **RoBeeX App** and view the **battery status** on the main screen.
 
  2. Checking with the Switch on the RoBeeX main Board
 
-::: info
-To check the battery charge manually:
+    ::: info
+    To check the battery charge manually:
 
- **Press** the switch (SW1) on the RoBeeX main board **briefly**, then **release** it.  
-The **RGB1 – RGB4 LEDs** will light up to show the current battery charge level.
-:::
+    **Press** the switch (SW1) on the RoBeeX main board **briefly**, then **release** it.  
+    The **RGB1 – RGB4 LEDs** will light up to show the current battery charge level.
+    :::
 
-### LED Indicators
+    ### LED Indicators
 
-| RGB1 | RGB2 | RGB3 | RGB4 | Charge Level |
-|------|------|------|------|---------------|
-| 🟢 GREEN | 🟢 GREEN | 🟢 GREEN | 🟢 GREEN | **100%** |
-| 🟢 GREEN | 🟢 GREEN | 🟢 GREEN | ⚫ OFF | **75%** |
-| 🟢 GREEN | 🟢 GREEN | ⚫ OFF | ⚫ OFF | **50%** |
-| 🟢 GREEN | ⚫ OFF | ⚫ OFF | ⚫ OFF | **25%** |
-| 🔴 RED | 🔴 RED | 🔴 RED | 🔴 RED | **5% (Low battery – please recharge)** |
-
-<br>
+    | RGB1 | RGB2 | RGB3 | RGB4 | Charge Level |
+    |------|------|------|------|---------------|
+    | 🟢 GREEN | 🟢 GREEN | 🟢 GREEN | 🟢 GREEN | **100%** |
+    | 🟢 GREEN | 🟢 GREEN | 🟢 GREEN | ⚫ OFF | **75%** |
+    | 🟢 GREEN | 🟢 GREEN | ⚫ OFF | ⚫ OFF | **50%** |
+    | 🟢 GREEN | ⚫ OFF | ⚫ OFF | ⚫ OFF | **25%** |
+    | 🔴 RED | 🔴 RED | 🔴 RED | 🔴 RED | **5% (Low battery – please recharge)** |
 
 ### 🎥 Video Guide: How to Check Battery Charge Level (Video Shows `75%`)
 <video src="/assets/battery-checking-75.webm" controls loop autoplay width="500"></video>
@@ -129,7 +129,10 @@ Store the battery in a cool (22°C – 28°C), dry place away from direct sunlig
 
 ## ⚠️ Safety & Caution
 Please follow these important battery safety instructions:
-::: warning ⚠️ Safety Notices
+
+
+::: warning
+⚠️ Safety Notices
 
 ❌ Do not crash, puncture, crush, or bend the battery.
 
