@@ -19,7 +19,7 @@ This quadcopter is designed for indoor flight.
 | Type| Quadcopter | 
 | Flight Time | up to 8 minutes | 
 | Quadcopter weight| 90 g |
-| Dimensions | 18 x 18 x 40 mm |
+| Dimensions | 18 * 18 * 40 mm |
 | Motor Type | Coreless DC |
 | Battery  | LiPo 3.8V 1S 1100mAh |
 | Maximum flight range | 50 m |

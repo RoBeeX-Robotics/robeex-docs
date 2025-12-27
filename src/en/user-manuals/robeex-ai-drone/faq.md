@@ -14,7 +14,7 @@ A: The RoBeeX is a programmable educational quadcopter designed *exclusively* fo
 | :--- | :--- | :--- | 
 | **Type** | Quadcopter | Designed for STEM, coding, and AI projects. **For indoor use only.** | 
 | **Weight** | 90 g | Below the 250g registration threshold in many regions. | 
-| **Dimensions** | **180 x 180 x 40 mm** | The size is 180mm x 180mm x 40mm. | 
+| **Dimensions** | **180 * 180 * 40 mm** | The size is 180mm x 180mm x 40mm. | 
 | **Motor Type** | Coreless DC | | 
 | **Camera** | 3MP sensor | Video resolution up to 1024x768. | 
 | **Frequency** | WiFi 2.4GHz | Used for control and video telemetry. | 
