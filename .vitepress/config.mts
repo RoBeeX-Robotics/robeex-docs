@@ -8,12 +8,24 @@ const defaultConfigs = {
     } as DefaultTheme.Outline,
     search: {
         provider: "local",
-    }
+    },
+    lastUpdated: {
+        text: "Last updated: ",
+        formatOptions: {
+            dateStyle: "full",
+        },
+    },
 } as const;
+
+const hostname = "https://docs.robeex.com";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     ignoreDeadLinks: false,
+    sitemap: {
+        hostname,
+        lastmodDateOnly: false,
+    },
     head: [
         [
             "script",
@@ -40,6 +52,16 @@ export default defineConfig({
             `,
         ],
         ["link", { rel: "icon", href: "/favicon.ico" }],
+        ["link", { rel: "alternate", hreflang: "en", href: hostname + "/en/" }],
+        ["link", { rel: "alternate", hreflang: "fa", href: hostname + "/fa/" }],
+        [
+            "link",
+            {
+                rel: "alternate",
+                hreflang: "x-default",
+                href: hostname + "/en/",
+            },
+        ],
     ],
     locales: {
         root: {
@@ -75,6 +97,10 @@ export default defineConfig({
             dir: "rtl",
             title: "مستندات RoBeeX",
             themeConfig: {
+                lastUpdated: {
+                    ...defaultConfigs.lastUpdated,
+                    text: "اخرین تغییر: ",
+                },
                 nav: [
                     { text: "خانه", link: "/fa" },
                     {
@@ -119,7 +145,7 @@ export default defineConfig({
                                     navigateText: "حرکت",
                                     closeText: "بستن",
                                 },
-                            }
+                            },
                         },
                     },
                 },
@@ -132,5 +158,6 @@ export default defineConfig({
     appearance: "force-dark",
     themeConfig: {
         search: defaultConfigs.search,
+        lastUpdated: defaultConfigs.lastUpdated,
     },
 });

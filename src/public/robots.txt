@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /en/
+Allow: /fa/
+Allow: /
+
+Disallow: /404.html
+
+Sitemap: https://docs.robeex.com/sitemap.xml
