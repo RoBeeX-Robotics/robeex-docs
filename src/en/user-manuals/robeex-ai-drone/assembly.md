@@ -32,20 +32,33 @@ Ensure the propeller hub is fully seated on the motor shaft until the end of the
 ::: tip
 Follow the **arrow directions shown on the RoBeeX main board near the rubber dampers** to identify each motor’s rotation direction.
 :::
+
+### Motors Numbering
+| Motor  | Position        | Sping Direction |
+| ------ | --------------- | --------------- |
+| **M1** | Top-Right       | CCW             |
+| **M2** | Top-Left        | CW              |
+| **M3** | Bottom-Left     | CCW             |
+| **M4** | Bottom-Right    | CW              |
+
 ![M1&M3=CCW M2&M4=CW](/assets/ccw-cw-motors.jpg)
 
+### Motors Spin Direction
 
-## Motor Spin Directions
+<video src="/assets/propeller-rotation.webm" autoplay loop muted> </video>
 
 - **Motors M1 and M3** rotate **Counter Clockwise (CCW)**  
   → Install the **CCW propeller** on these motors.  
-![CCW Propeller](/assets/ccw-propeller-arrow.jpg)
+<!-- ![CCW Propeller](/assets/ccw-propeller-arrow.jpg) -->
+<img src="/assets/cw-propeller-arrow.jpg" alt="CCW Propeller" width="300"/>
 
 <br>
 
 - **Motors M2 and M4** rotate **Clockwise (CW)**  
   → Install the **CW propeller** on these motors.  
-![CW Propeller](/assets/cw-propeller-arrow.jpg)
+<!-- ![CW Propeller](/assets/cw-propeller-arrow.jpg) -->
+
+<img src="/assets/cw-propeller-arrow.jpg" alt="CW Propeller" width="300"/>
 
 
 ---
