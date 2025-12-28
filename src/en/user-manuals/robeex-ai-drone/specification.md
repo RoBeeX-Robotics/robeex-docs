@@ -26,3 +26,19 @@ This quadcopter is designed for indoor flight.
 | Permissible wind speed | up to 5 m/s |
 | Camera | 3MP Video resolution: up to 1024x768 |
 | Frequency | WiFi 2.4GHz |
+
+## Features 
+- Manaual Flight using Smart Phone / PC
+- Using Joy Sticks (Connected to PC)
+- Programming with Blockly
+    - Persision Flight
+    - Reading from sensors (IMU, Bottom Range Finder)
+    - RGB LED / Bottom Flash Light
+    - Camera
+        - Color Detection
+        - Face Detection
+- Pogramming with Python
+    - Full control over drone functionlities (same as blockly)
+    - Integration with OpenCV
+    - Integration with Vision AI Models
+
