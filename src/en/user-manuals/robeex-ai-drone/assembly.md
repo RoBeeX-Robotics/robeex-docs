@@ -50,7 +50,7 @@ Follow the **arrow directions shown on the RoBeeX main board near the rubber dam
 - **Motors M1 and M3** rotate **Counter Clockwise (CCW)**  
   → Install the **CCW propeller** on these motors.  
 <!-- ![CCW Propeller](/assets/ccw-propeller-arrow.jpg) -->
-<img src="/assets/cw-propeller-arrow.jpg" alt="CCW Propeller" width="300"/>
+<img src="/assets/ccw-propeller-arrow.jpg" alt="CCW Propeller" width="300"/>
 
 <br>
 
