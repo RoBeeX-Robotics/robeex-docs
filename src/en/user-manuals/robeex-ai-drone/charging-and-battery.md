@@ -51,6 +51,17 @@ When the LED turns green, disconnect the battery from the charger board.
 Do not leave the battery connected for a long time after it’s fully charged.
 :::
 
+<hr>
+
+### 🔧 Adjust the Charger Connector Pins
+
+If you cannot connect the battery to the charger, or if inserting the battery feels difficult, you can adjust the pin positions using the tweezers included in the package.
+
+::: warning
+⚠️ **DO NOT touch the charger pins while the charger is connected to a power source.**
+:::
+
+<video src="/assets/fix-charger-connector.webm" controls loop autoplay width="500"></video>
 
 ## 🧭 Inserting the Battery
 
