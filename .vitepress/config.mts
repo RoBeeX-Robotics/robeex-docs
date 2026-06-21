@@ -49,6 +49,25 @@ export default defineConfig({
             if (window.location.pathname === '/' || window.location.pathname.toLowerCase() === '/index.html') {
                 window.location.replace('/en/');
             }
+            if (!window.location.pathname.startsWith('/fa')) {
+                setTimeout(() => {
+                    let elm = Array.from(document.querySelectorAll(".VPNavBarExtra .VPMenuLink")).filter((x) => x?.querySelector('span')?.innerHTML?.includes('Persian'))?.[0]
+
+                    console.log(elm)
+
+                    if (elm) {
+                        elm.style.display = 'none'
+                    }
+
+                    elm = Array.from(document.querySelectorAll("div.VPFlyout.VPNavBarTranslations.translations > div > div > div > div")).filter((x) => x?.querySelector('span')?.innerHTML?.includes('Persian'))?.[0]
+
+                    console.log(elm)
+
+                    if (elm) {
+                        elm.style.display = 'none'
+                    }
+                }, 100)
+            }
             `,
         ],
         ["link", { rel: "icon", href: "/favicon.ico" }],
