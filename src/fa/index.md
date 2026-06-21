@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: برو بریم
-      link: user-manuals/robeex-ai-drone/specification
+      link: user-manuals/robeex-ai-drone/specification.html
     - theme: alt
       text: مستندات برنامه نویسی
-      link: programming
+      link: programming/
 
 features:
   - title: راهنمای کاربر

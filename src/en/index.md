@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Get started
-      link: user-manuals/robeex-ai-drone/specification
+      link: user-manuals/robeex-ai-drone/specification.html
     - theme: alt
       text: API References
       link: programming/
