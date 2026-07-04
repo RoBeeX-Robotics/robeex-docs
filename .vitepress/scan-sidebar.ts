@@ -167,18 +167,7 @@ export function generateSidebar(
     const srcPath = path.resolve('src/' + langPrefix + '/');
     const sidebarItems = scanDirectory(srcPath, langPrefix);
 
-    console.log(sidebarItems[0].items?.[0]);
     // console.log(JSON.stringify(allNames, null, 4));
-    //   const sidebar: SidebarItem = {
-    //     text: 'User manuals',
-    //     items: sidebarItems,
-    //   };
 
     return sidebarItems;
 }
-
-// --- Run and output the result ---
-// export const sidebar = generateSidebar();
-// console.log(JSON.stringify(sidebar, null, 2));
-// console.log(sidebar);
-//
