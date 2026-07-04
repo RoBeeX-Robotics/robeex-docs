@@ -1,6 +1,7 @@
 import { defineConfig, UserConfig } from "vitepress";
 import { DefaultTheme } from "vitepress/theme";
 import { generateSidebar } from "./scan-sidebar";
+import { fileURLToPath } from "node:url";
 
 const defaultConfigs = {
     outline: {
@@ -21,6 +22,21 @@ const hostname = "https://docs.robeex.com";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+    vite: {
+        resolve: {
+            alias: [
+                {
+                    find: /^.*\/VPNavBarTranslations\.vue$/,
+                    replacement: fileURLToPath(
+                        new URL(
+                            "./theme/CustomNavBarTranslations.vue",
+                            import.meta.url,
+                        ),
+                    ),
+                },
+            ],
+        },
+    },
     ignoreDeadLinks: false,
     sitemap: {
         hostname,
@@ -38,36 +54,6 @@ export default defineConfig({
     t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
     y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 })(window, document, "clarity", "script", "uir0bpxaqd");
-            `,
-        ],
-        [
-            "script",
-            {
-                type: "text/javascript",
-            },
-            `
-            if (window.location.pathname === '/' || window.location.pathname.toLowerCase() === '/index.html') {
-                window.location.replace('/en/');
-            }
-            if (!window.location.pathname.startsWith('/fa')) {
-                setTimeout(() => {
-                    let elm = Array.from(document.querySelectorAll(".VPNavBarExtra .VPMenuLink")).filter((x) => x?.querySelector('span')?.innerHTML?.includes('Persian'))?.[0]
-
-                    console.log(elm)
-
-                    if (elm) {
-                        elm.style.display = 'none'
-                    }
-
-                    elm = Array.from(document.querySelectorAll("div.VPFlyout.VPNavBarTranslations.translations > div > div > div > div")).filter((x) => x?.querySelector('span')?.innerHTML?.includes('Persian'))?.[0]
-
-                    console.log(elm)
-
-                    if (elm) {
-                        elm.style.display = 'none'
-                    }
-                }, 100)
-            }
             `,
         ],
         ["link", { rel: "icon", href: "/favicon.ico" }],
@@ -116,6 +102,7 @@ export default defineConfig({
             dir: "rtl",
             title: "مستندات RoBeeX",
             themeConfig: {
+                langMenuLabel: 'تغییر زبان',
                 lastUpdated: {
                     ...defaultConfigs.lastUpdated,
                     text: "اخرین تغییر: ",
@@ -145,6 +132,12 @@ export default defineConfig({
                 outline: {
                     ...defaultConfigs.outline,
                     label: "فهرست مطالب",
+                },
+                notFound: {
+                    title: "صفحه مورد نظر یافت نشد",
+                    linkText: "بازگشت به خانه",
+                    linkLabel: "بازگشت به خانه",
+                    quote: "گشتم نبود، نگرد نیست",
                 },
                 search: {
                     ...defaultConfigs.search,
