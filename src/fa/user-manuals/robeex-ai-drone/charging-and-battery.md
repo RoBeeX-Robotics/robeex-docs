@@ -9,7 +9,7 @@ orderPriority: 85
 
 ::: warning
 هرگز از باتری‌های غیر RoBeeX استفاده نکنید.
-برای خرید نمونه‌های اصلی به [www.robeex.com](https://www.robeex.com) مراجعه کنید.
+برای خرید نمونه‌های اصلی به [www.robeex.ir](https://www.robeex.ir) مراجعه کنید.
 :::
 
 ## 🔌 دستورالعمل‌های شارژ
