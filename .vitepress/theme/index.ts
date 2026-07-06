@@ -5,6 +5,10 @@ import './custom.css';
 import './blockly-base.css';
 import './blockly-theme.css';
 
+
+import MyComp from './MyComp.vue';
+import MyIcon from './MyIcon.vue';
+
 export default {
     extends: DefaultTheme,
 
@@ -12,6 +16,7 @@ export default {
     // injects the slots
     enhanceApp({ app }) {
         // register your custom global components
-        app.component('MyComp', () => import('./MyComp.vue'));
+        app.component('MyComp', MyComp);
+        app.component('MyIcon', MyIcon);
     },
 } as Theme;

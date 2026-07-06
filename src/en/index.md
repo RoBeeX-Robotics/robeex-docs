@@ -29,10 +29,10 @@ features:
     details: Python Library Documentation
     link: programming/python/guides/install-library.html
     icon: 
-        src: https://upload.wikimedia.org/wikipedia/commons/archive/c/c3/20220821155028%21Python-logo-notext.svg
+        src: /icon/python.svg
   - title: Arduino
     link: programming/arduino.html
     details: RoBeeX Arduino Library Documentation
     icon:
-        src: https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/120px-Arduino_Logo.svg.png?20200922062315
+        src: /icon/arduino.svg
 ---

@@ -1,12 +1,16 @@
 {
     "$schema": "./file-name-translation.schema.json",
+    "robeex-ai-drone": {
+        "en": "<img class=\"icon\" src=\"/icon/drone.svg\" /> RoBeeX AI Drone",
+        "fa": "<img class=\"icon\" src=\"/icon/drone.svg\" /> RoBeeX AI Drone"
+    },
     "expansion-boards": {
         "en": "🔌 Expansion Boards",
         "fa": "🔌 بردهای توسعه"
     },
     "user-manuals": {
-        "en": "📚 User Manuals",
-        "fa": "📚 دفترچه‌های راهنما"
+        "en": "User Manuals",
+        "fa": "دفترچه‌های راهنما"
     },
     "specification": {
         "en": "📘 Specification",
@@ -65,12 +69,12 @@
         "fa": "❓ پرسش‌های متداول"
     },
     "programming": {
-        "en": "💻 Programming",
-        "fa": "💻 برنامه‌نویسی"
+        "en": "Programming",
+        "fa": "برنامه‌نویسی"
     },
     "guides": {
-        "en": "Guides",
-        "fa": "راهنما ها"
+        "en": "📚 Guides",
+        "fa": "📚 راهنما ها"
     },
     "install-library": {
         "en": "Install Library",
@@ -85,24 +89,24 @@
         "fa": "مقدمه"
     },
     "references": {
-        "en": "References",
-        "fa": "مراجع"
+        "en": "🔍 References",
+        "fa": "🔍 مراجع"
     },
     "api-references": {
-        "en": "API References",
-        "fa": "مراجع API"
+        "en": "🔍 API References",
+        "fa": "🔍 مراجع API"
     },
     "blockly": {
-        "en": "Blockly",
-        "fa": "بلاکلی"
+        "en": "<img class=\"icon\" src=\"/icon/blockly.png\" /> Blockly",
+        "fa": "<img class=\"icon\" src=\"/icon/blockly.png\" /> بلاکلی"
     },
     "python": {
-        "en": "Python",
-        "fa": "پایتون"
+        "en": "<img class=\"icon\" src=\"/icon/python.svg\" /> Python",
+        "fa": "<img class=\"icon\" src=\"/icon/python.svg\" /> پایتون"
     },
     "arduino": {
-        "en": "Arduino",
-        "fa": "آردوینو"
+        "en": "<img class=\"icon\" src=\"/icon/arduino.svg\" /> Arduino",
+        "fa": "<img class=\"icon\" src=\"/icon/arduino.svg\" /> آردوینو"
     },
     "overview": {
         "en": "Overview",
