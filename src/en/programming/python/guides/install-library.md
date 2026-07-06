@@ -37,7 +37,7 @@ from robeex_ai_drone_api import RobeexAIDrone
 from time import sleep
 
 def main():  
-     drone = RobeexAIDrone(drone_ip="172.168.1.128")  
+     drone = RobeexAIDrone()  
      drone.wait_for_telemetry()  
      drone.rc.nav.arm()  
      drone.rc.nav.takeoff(1.0)  
@@ -55,7 +55,7 @@ if __name__ == "__main__":
 from robeex_ai_drone_api import RobeexAIDrone  
 from time import sleep
 
-drone = RobeexAIDrone(drone_ip="172.168.1.128")  
+drone = RobeexAIDrone()  
 while True:
     drone.rc.rgb.set_full_color(255, 0, 0)  # Set all LEDs to red
     sleep(1)
