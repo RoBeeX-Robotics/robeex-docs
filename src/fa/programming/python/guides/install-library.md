@@ -11,7 +11,7 @@ outline: deep
 
 - **رابط ناوبری (Navigation API)**: کنترل حرکت پهپاد، تیک‌آف، لندینگ و تنظیم موقعیت.  
 - **رابط LEDهای RGB**: سفارشی‌سازی رنگ و روشنایی LEDها برای موتورها یا همه‌ی LEDها.  
-- **پخش ویدیو (Video Streaming)**: پخش زنده ویدیو از دوربین پهپاد با استفاده از UDP.  
+- **پخش ویدیو (Video Streaming)**: پخش زنده ویدیو از دوربین پهپاد.
 - **تله‌متری (Telemetry)**: دریافت داده‌های تله‌متری در زمان واقعی مانند موقعیت، ارتفاع، وضعیت باتری و موارد دیگر.  
 
 ## نصب  
@@ -37,7 +37,7 @@ from robeex_ai_drone_api import RobeexAIDrone
 from time import sleep
 
 def main():
-     drone = RobeexAIDrone(drone_ip="172.168.1.128")
+     drone = RobeexAIDrone()
      drone.wait_for_telemetry()
      drone.rc.nav.arm()
      drone.rc.nav.takeoff(1.0)
@@ -55,7 +55,7 @@ if __name__ == "__main__":
 from robeex_ai_drone_api import RobeexAIDrone
 from time import sleep
 
-drone = RobeexAIDrone(drone_ip="172.168.1.128")
+drone = RobeexAIDrone()
 while True:
     drone.rc.rgb.set_full_color(255, 0, 0)  # Set all LEDs to red
     sleep(1)
@@ -65,7 +65,9 @@ while True:
 
 ### مثال‌های بیشتر
 
-برای یادگیری بیشتر در مورد قابلیت‌های API، نمونه‌های بیشتر را در پوشه‌ی `examples/` بررسی کنید.
+برای یادگیری بیشتر در مورد قابلیت‌های API، نمونه‌های بیشتر را در 
+
+[ریپازیتوری گیتهاب ما - RoBeeX AI Drone Python Examples](https://github.com/RoBeeX-Robotics/robeex-ai-drone-python-examples)
 
 ## مشارکت
 
