@@ -129,7 +129,11 @@
         "fa": "اجرا یا تکثیر"
     },
     "face-tracking": {
-        "en": "Face Tracking",
-        "fa": "ردیابی صورت"
+        "en": "Face Tracking 👨🏻",
+        "fa": "ردیابی صورت 👨🏻"
+    },
+    "bull-fighting": {
+        "en": "Bull Fighting 🐂",
+        "fa": "گاو بازی 🐂"
     }
 }

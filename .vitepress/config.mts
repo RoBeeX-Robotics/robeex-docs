@@ -56,6 +56,13 @@ export default defineConfig({
 })(window, document, "clarity", "script", "uir0bpxaqd");
             `,
         ],
+        [
+            "script",
+            {
+                async: 'async',
+                src: "//www.instagram.com/embed.js"
+            }
+        ],
         ["link", { rel: "icon", href: "/favicon.ico" }],
         ["link", { rel: "alternate", hreflang: "en", href: hostname + "/en/" }],
         ["link", { rel: "alternate", hreflang: "fa", href: hostname + "/fa/" }],
