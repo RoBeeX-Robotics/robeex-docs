@@ -8,7 +8,7 @@
 * **چرخش ۱۸۰ درجه:** پس از حرکت به جلو، پهپاد یک چرخش **۱۸۰ درجه‌ای حول محور عمودی (Yaw)** انجام می‌دهد تا در جهت مخالف قرار بگیرد.
 
 
-### [بلوک تشخیص چهره](../../references/block-categories/machine-vision.md#detect-face)
+### [بلوک تشخیص چهره](/en/programming/blockly/references/block-categories/machine-vision.md#detect-face)
 <div style="padding: 5px 0;">
 <div _ngcontent-ng-c1592021296="" id="blocklyArea" style="height: 35px">
     <div _ngcontent-ng-c1592021296="" id="blocklyDiv">
@@ -24,7 +24,7 @@
 </div>
 </div>
 
-### [بلوک شرط](../../references/block-categories/logic.md#controls-if)
+### [بلوک شرط](/en/programming/blockly/references/block-categories/logic.md#controls-if)
 <div style="padding: 5px 0;">
 <div _ngcontent-ng-c1592021296="" id="blocklyArea" style="height: 70px">
     <div _ngcontent-ng-c1592021296="" id="blocklyDiv">
@@ -40,7 +40,7 @@
 </div>
 </div>
 
-### [بلوک پرواز](../../references/block-categories/flying.md#flight)
+### [بلوک پرواز](/en/programming/blockly/references/block-categories/flying.md#flight)
 <div style="padding: 5px 0;">
 <div _ngcontent-ng-c1592021296="" id="blocklyArea" style="height: 84px">
     <div _ngcontent-ng-c1592021296="" id="blocklyDiv">
@@ -59,7 +59,7 @@
 </div>
 </div>
 
-### [بلوک حرکت رو به جلو](../../references/block-categories/flying.md#move-forward)
+### [بلوک حرکت رو به جلو](/en/programming/blockly/references/block-categories/flying.md#move-forward)
 <div style="padding: 5px 0;">
 <div _ngcontent-ng-c1592021296="" id="blocklyArea" style="height: 46px">
     <div _ngcontent-ng-c1592021296="" id="blocklyDiv">
@@ -79,7 +79,7 @@
 </div>
 
 
-### [بلوک تنظیم زاویه Yaw](../../references/block-categories/flying.md#set-yaw-cw)
+### [بلوک تنظیم زاویه Yaw](/en/programming/blockly/references/block-categories/flying.md#set-yaw-cw)
 <div style="padding: 5px 0;">
 <div _ngcontent-ng-c1592021296="" id="blocklyArea" style="height: 46px">
     <div _ngcontent-ng-c1592021296="" id="blocklyDiv">
