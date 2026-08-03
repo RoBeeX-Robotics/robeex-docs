@@ -107,7 +107,8 @@ export default defineConfig({
             link: "/fa/",
             label: "Persian (فارسی)",
             dir: "rtl",
-            title: "مستندات RoBeeX",
+            title: "مستندات روبیکس",
+            description: "با راهنماهای گام‌به‌گام، آموزش‌ها، مستندات API و مثال‌های کاربردی، مونتاژ، پرواز و برنامه‌نویسی ربات پرنده روبیکس را یاد بگیرید.",
             themeConfig: {
                 langMenuLabel: 'تغییر زبان',
                 lastUpdated: {
@@ -172,7 +173,7 @@ export default defineConfig({
         },
     },
     title: "RoBeeX Docs",
-    description: "RoBeeX Documentation Site",
+    description: "Learn how to assemble, fly, and program the RoBeeX AI Drone with step-by-step guides, tutorials, API references, and practical examples.",
     srcDir: "src",
     appearance: "force-dark",
     themeConfig: {

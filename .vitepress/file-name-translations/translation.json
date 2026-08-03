@@ -2,7 +2,7 @@
     "$schema": "./file-name-translation.schema.json",
     "robeex-ai-drone": {
         "en": "<img class=\"icon\" src=\"/icon/drone.svg\" /> RoBeeX AI Drone",
-        "fa": "<img class=\"icon\" src=\"/icon/drone.svg\" /> RoBeeX AI Drone"
+        "fa": "<img class=\"icon\" src=\"/icon/drone.svg\" /> ربات پرنده روبیکس"
     },
     "expansion-boards": {
         "en": "🔌 Expansion Boards",
