@@ -15,6 +15,9 @@ If you have not yet logged into your RoBeeX account, you will need to do so befo
 
 This procedure establishes the direct Wi-Fi link between your device and the drone for manual control, programming, and real-time video feed.
 
+::: tip
+**Wi-Fi Password:** The default password for any RoBeeX AI Drone is **`1234567890`**.
+:::
 
 ### Connection Instructions
 
