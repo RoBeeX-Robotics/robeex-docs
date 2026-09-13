@@ -22,6 +22,9 @@
     --vp-button-brand-text: var(--vp-c-black);
     --vp-button-brand-hover-text: var(--vp-c-black);
     --vp-button-brand-active-text: var(--vp-c-black);
+    --teacher-note-accent: #a78bfa;
+    --teacher-note-background: rgba(139, 92, 246, 0.12);
+    --teacher-mode-background: rgba(255, 255, 255, 0.06);
     /* --vp-home-hero-name-background: -webkit-linear-gradient(
     120deg,
     #bd34fe 30%,
@@ -33,6 +36,111 @@
     #47caff 50%
   );
   --vp-home-hero-image-filter: blur(44px); */
+}
+
+.teacher-mode-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    width: auto;
+    max-width: 100%;
+    margin: 0 0 32px;
+    padding-block: 7px;
+    padding-inline: 14px 8px;
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 10px;
+    background: var(--teacher-mode-background);
+}
+
+.teacher-mode-label {
+    color: var(--vp-c-text-2);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.teacher-mode-options {
+    display: inline-flex;
+    padding: 3px;
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 9px;
+    background: var(--vp-c-bg-soft);
+}
+
+.teacher-mode-options label {
+    position: relative;
+    padding: 6px 14px;
+    border-radius: 6px;
+    color: var(--vp-c-text-2);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    transition:
+        color 0.2s,
+        background-color 0.2s;
+}
+
+.teacher-mode-options label.active {
+    color: var(--vp-button-brand-text);
+    background: var(--vp-c-brand-1);
+}
+
+.teacher-mode-options input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.teacher-mode-options label:focus-within {
+    outline: 2px solid var(--vp-c-brand-1);
+    outline-offset: 2px;
+}
+
+.vp-doc .teacher.custom-block {
+    display: none;
+    border: 1px solid color-mix(in srgb, var(--teacher-note-accent) 55%, transparent);
+    border-inline-start: 4px solid var(--teacher-note-accent);
+    background: var(--teacher-note-background);
+}
+
+html[data-docs-mode="teacher"] .vp-doc .teacher.custom-block {
+    display: block;
+}
+
+.vp-doc .teacher.custom-block > .custom-block-title {
+    color: var(--teacher-note-accent);
+}
+
+.vp-doc .teacher.custom-block > .custom-block {
+    margin: 16px 0 0;
+}
+
+@media (max-width: 639px) {
+    .teacher-mode-switch {
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .teacher-mode-label {
+        padding-inline: 2px;
+    }
+
+    .teacher-mode-options {
+        display: flex;
+        width: 100%;
+    }
+
+    .teacher-mode-options label {
+        flex: 1;
+        text-align: center;
+    }
 }
 
 

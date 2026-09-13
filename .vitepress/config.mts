@@ -2,6 +2,9 @@ import { defineConfig, UserConfig } from "vitepress";
 import { DefaultTheme } from "vitepress/theme";
 import { generateSidebar } from "./scan-sidebar";
 import { fileURLToPath } from "node:url";
+import markdownItContainer from "markdown-it-container";
+
+const docsModeStorageKey = "robeex-docs-view-mode";
 
 const defaultConfigs = {
     outline: {
@@ -62,6 +65,23 @@ export default defineConfig({
                 async: 'async',
                 src: "//www.instagram.com/embed.js"
             }
+        ],
+        [
+            "script",
+            {},
+            `
+(function () {
+    var mode = "student";
+
+    try {
+        if (localStorage.getItem("${docsModeStorageKey}") === "teacher") {
+            mode = "teacher";
+        }
+    } catch {}
+
+    document.documentElement.dataset.docsMode = mode;
+})();
+            `,
         ],
         ["link", { rel: "icon", href: "/favicon.ico" }],
         ["link", { rel: "alternate", hreflang: "en", href: hostname + "/en/" }],
@@ -176,6 +196,39 @@ export default defineConfig({
     description: "Learn how to assemble, fly, and program the RoBeeX AI Drone with step-by-step guides, tutorials, API references, and practical examples.",
     srcDir: "src",
     appearance: "force-dark",
+    markdown: {
+        config(md) {
+            md.use(markdownItContainer, "teacher", {
+                render(tokens, idx, _options, env) {
+                    const token = tokens[idx];
+
+                    if (token.nesting === 1) {
+                        env.frontmatter ??= {};
+                        env.frontmatter.hasTeacherNotes = true;
+
+                        const customTitle = token.info
+                            .trim()
+                            .slice("teacher".length)
+                            .trim();
+                        const defaultTitle = env.relativePath?.startsWith("fa/")
+                            ? "یادداشت مدرس"
+                            : "Teacher note";
+                        const title = md.renderInline(
+                            customTitle || defaultTitle,
+                            {
+                                references: env.references,
+                            },
+                        );
+                        const attrs = md.renderer.renderAttrs(token);
+
+                        return `<aside class="teacher custom-block"${attrs}><p class="custom-block-title">${title}</p>\n`;
+                    }
+
+                    return "</aside>\n";
+                },
+            });
+        },
+    },
     themeConfig: {
         search: defaultConfigs.search,
         lastUpdated: defaultConfigs.lastUpdated,

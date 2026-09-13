@@ -34,6 +34,8 @@ export default {
 
 ## Custom Containers
 
+Teacher containers are visible only in Teacher mode and can have an optional title. When nesting another container inside one, use four colons for the outer teacher fence, as shown below.
+
 **Input**
 
 ```md
@@ -56,6 +58,22 @@ This is a dangerous warning.
 ::: details
 This is a details block.
 :::
+
+::: teacher
+This note is visible only in Teacher mode.
+:::
+
+::: teacher Classroom setup
+This teacher note has a custom title.
+:::
+
+:::: teacher
+This teacher note contains another custom container.
+
+::: warning
+This warning is visible only in Teacher mode.
+:::
+::::
 ```
 
 **Output**
@@ -79,6 +97,22 @@ This is a dangerous warning.
 ::: details
 This is a details block.
 :::
+
+::: teacher
+This note is visible only in Teacher mode.
+:::
+
+::: teacher Classroom setup
+This teacher note has a custom title.
+:::
+
+:::: teacher
+This teacher note contains another custom container.
+
+::: warning
+This warning is visible only in Teacher mode.
+:::
+::::
 
 ## More
 
