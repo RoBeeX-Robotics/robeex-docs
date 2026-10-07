@@ -345,7 +345,13 @@ Create a colour with the specified amount of red, green, and blue. All values mu
 </div>
 
 ### Description
-Blends two colours together with a given ratio (0.0 - 1.0).
+Blends two colours together with a given ratio (0 - 100), 
+
+::: tip
+- `0` => COLOUR 1
+- `0 < RATIO < 100` => a mixture of COLOUR 1 and 2
+- `100` => COLOUR 2`
+:::
 
 
 ### Params
