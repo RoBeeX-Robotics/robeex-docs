@@ -15,6 +15,11 @@ hero:
       link: programming/
 
 features:
+  - title: برنامه آموزشی
+    details: مسیر گام‌به‌گام ترم‌های RoBeeX برای دانش‌آموز و مدرس
+    link: /fa/curriculum/
+    icon:
+        src: /icon/drone.png
   - title: User Manuals
     details: User Manuals
     link: user-manuals/robeex-ai-drone/specification.html
@@ -36,3 +41,4 @@ features:
     icon:
         src: /icon/arduino.svg
 ---
+

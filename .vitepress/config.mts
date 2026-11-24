@@ -3,6 +3,7 @@ import { DefaultTheme } from "vitepress/theme";
 import { generateSidebar } from "./scan-sidebar";
 import { fileURLToPath } from "node:url";
 import markdownItContainer from "markdown-it-container";
+import { registerFaqContainer } from "./faq";
 
 const docsModeStorageKey = "robeex-docs-view-mode";
 
@@ -198,6 +199,7 @@ export default defineConfig({
     appearance: "force-dark",
     markdown: {
         config(md) {
+            registerFaqContainer(md);
             md.use(markdownItContainer, "teacher", {
                 render(tokens, idx, _options, env) {
                     const token = tokens[idx];

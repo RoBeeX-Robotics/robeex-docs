@@ -1,0 +1,203 @@
+{
+  "blocks": {
+    "blocks": [
+      {
+        "id": "h17ua3ow$,P?m%l#wr0k",
+        "next": {
+          "block": {
+            "id": "ZA:JOd++3V}aA*|^B)[v",
+            "inputs": {
+              "CODE": {
+                "block": {
+                  "fields": {
+                    "VAR": {
+                      "id": "distanceCm"
+                    }
+                  },
+                  "id": "SUa9v3S^`6kp$TED6Pnf",
+                  "inputs": {
+                    "VALUE": {
+                      "block": {
+                        "id": "bVBa]!n3VoqU6R^UJ`K]",
+                        "type": "get_distance_to_gnd"
+                      }
+                    }
+                  },
+                  "next": {
+                    "block": {
+                      "extraState": {
+                        "hasElse": true
+                      },
+                      "id": "TMB7KnZjl?^Zf8?12POG",
+                      "inputs": {
+                        "DO0": {
+                          "block": {
+                            "id": "$6O8ci[$3}bm:@=(sjWU",
+                            "inputs": {
+                              "TEXT": {
+                                "block": {
+                                  "extraState": {
+                                    "itemCount": 2
+                                  },
+                                  "id": "lr17/B=e_G~:+v%#+Bl~",
+                                  "inputs": {
+                                    "ADD0": {
+                                      "block": {
+                                        "fields": {
+                                          "TEXT": "Range (cm): "
+                                        },
+                                        "id": "^R+1yWo?03LleK$jQ789",
+                                        "type": "text"
+                                      }
+                                    },
+                                    "ADD1": {
+                                      "block": {
+                                        "fields": {
+                                          "VAR": {
+                                            "id": "distanceCm"
+                                          }
+                                        },
+                                        "id": "}!}:xh=~E4sQ5aOzhEJj",
+                                        "type": "variables_get"
+                                      }
+                                    }
+                                  },
+                                  "type": "text_join"
+                                }
+                              }
+                            },
+                            "type": "print_var"
+                          }
+                        },
+                        "ELSE": {
+                          "block": {
+                            "id": "]N_w_5]h8ty6PN}o6DPK",
+                            "inputs": {
+                              "TEXT": {
+                                "block": {
+                                  "fields": {
+                                    "TEXT": "Range unavailable"
+                                  },
+                                  "id": "^+d0KF]8pi+h?Cug!-5;",
+                                  "type": "text"
+                                }
+                              }
+                            },
+                            "type": "print_var"
+                          }
+                        },
+                        "IF0": {
+                          "block": {
+                            "fields": {
+                              "OP": "AND"
+                            },
+                            "id": "o|9A!GAgi+5}:%|ukGsL",
+                            "inputs": {
+                              "A": {
+                                "block": {
+                                  "fields": {
+                                    "OP": "GT"
+                                  },
+                                  "id": "muEqebM!Dysf:i%GXTjP",
+                                  "inputs": {
+                                    "A": {
+                                      "block": {
+                                        "fields": {
+                                          "VAR": {
+                                            "id": "distanceCm"
+                                          }
+                                        },
+                                        "id": "Vx)jRqN-|}f$yk~fRs60",
+                                        "type": "variables_get"
+                                      }
+                                    },
+                                    "B": {
+                                      "block": {
+                                        "fields": {
+                                          "NUM": 0
+                                        },
+                                        "id": "ar^tfO6~0!)pyR3:Co*q",
+                                        "type": "math_number"
+                                      }
+                                    }
+                                  },
+                                  "type": "logic_compare"
+                                }
+                              },
+                              "B": {
+                                "block": {
+                                  "fields": {
+                                    "OP": "LT"
+                                  },
+                                  "id": "N@dV9f1S$nId8=e4r3z5",
+                                  "inputs": {
+                                    "A": {
+                                      "block": {
+                                        "fields": {
+                                          "VAR": {
+                                            "id": "distanceCm"
+                                          }
+                                        },
+                                        "id": "3f|H9v`G~T`VTsaoe__O",
+                                        "type": "variables_get"
+                                      }
+                                    },
+                                    "B": {
+                                      "block": {
+                                        "fields": {
+                                          "NUM": 400
+                                        },
+                                        "id": "%,yu5C%GSYxZ3Yn64nK2",
+                                        "type": "math_number"
+                                      }
+                                    }
+                                  },
+                                  "type": "logic_compare"
+                                }
+                              }
+                            },
+                            "type": "logic_operation"
+                          }
+                        }
+                      },
+                      "next": {
+                        "block": {
+                          "id": "][wsB_!C`o_)`O}S[w=I",
+                          "inputs": {
+                            "TIME": {
+                              "block": {
+                                "fields": {
+                                  "NUM": 0.2
+                                },
+                                "id": "mnC::t^h_Q2t.z~K|BW7",
+                                "type": "math_number"
+                              }
+                            }
+                          },
+                          "type": "sleep_sec"
+                        }
+                      },
+                      "type": "controls_if"
+                    }
+                  },
+                  "type": "variables_set"
+                }
+              }
+            },
+            "type": "main_task"
+          }
+        },
+        "type": "event_on_play_clicked",
+        "x": 30,
+        "y": 30
+      }
+    ],
+    "languageVersion": 0
+  },
+  "variables": [
+    {
+      "id": "distanceCm",
+      "name": "distanceCm"
+    }
+  ]
+}

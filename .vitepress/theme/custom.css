@@ -1,4 +1,5 @@
 @import "vazirmatn/Vazirmatn-Variable-font-face.css";
+@import "./faq.css";
 
 /* @font-face { */
 /*     font-family: "Vazirmatn"; */
@@ -38,13 +39,19 @@
   --vp-home-hero-image-filter: blur(44px); */
 }
 
+.VPDoc main:fullscreen {
+    overflow-y: auto;
+    padding: clamp(16px, 4vw, 64px);
+    background: var(--vp-c-bg);
+}
+
 .teacher-mode-switch {
     display: inline-flex;
     align-items: center;
     gap: 12px;
     width: auto;
     max-width: 100%;
-    margin: 0 0 32px;
+    margin: 0;
     padding-block: 7px;
     padding-inline: 14px 8px;
     border: 1px solid var(--vp-c-divider);
@@ -123,8 +130,9 @@ html[data-docs-mode="teacher"] .vp-doc .teacher.custom-block {
         display: flex;
         align-items: stretch;
         flex-direction: column;
+        flex: 1;
         gap: 8px;
-        width: 100%;
+        min-width: 0;
         padding: 10px;
     }
 
@@ -162,4 +170,146 @@ html[data-docs-mode="teacher"] .vp-doc .teacher.custom-block {
     user-select: none;
     width: 15px;
     margin: 0 1px;
+}
+
+/* Curriculum media: responsive figures and playable lesson videos. */
+.vp-doc .curriculum-media {
+    margin: 24px 0;
+}
+
+.vp-doc .curriculum-media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.vp-doc .curriculum-media img,
+.vp-doc .curriculum-media video,
+.vp-doc .curriculum-media iframe,
+.vp-doc .curriculum-media-grid img,
+.vp-doc .curriculum-media-grid video,
+.vp-doc .curriculum-media-grid iframe {
+    display: block;
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 12px;
+    background: var(--vp-c-bg-soft);
+}
+
+.vp-doc .curriculum-media iframe,
+.vp-doc .curriculum-media-grid iframe {
+    aspect-ratio: 16 / 9;
+}
+
+.vp-doc .curriculum-media figcaption,
+.vp-doc .curriculum-media-grid figcaption {
+    margin-top: 8px;
+    color: var(--vp-c-text-2);
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Lesson plans: keep the teaching flow readable in both student and teacher mode. */
+.vp-doc .lesson-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+    margin: 20px 0 28px;
+}
+
+.vp-doc .lesson-meta > div {
+    padding: 12px 14px;
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 10px;
+    background: var(--vp-c-bg-soft);
+}
+
+.vp-doc .lesson-meta strong {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--vp-c-text-1);
+}
+
+.vp-doc .lesson-checkpoint {
+    margin: 24px 0;
+    padding: 14px 16px;
+    border-inline-start: 4px solid var(--vp-c-brand-1);
+    border-radius: 8px;
+    background: color-mix(in srgb, var(--vp-c-brand-1) 10%, transparent);
+}
+
+.vp-doc .motor-map th,
+.vp-doc .motor-map td,
+.vp-doc .mission-log th,
+.vp-doc .mission-log td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.vp-doc figure.curriculum-media {
+    max-width: 820px;
+    margin-inline: auto;
+}
+
+.vp-doc figure.curriculum-media.is-narrow {
+    max-width: 560px;
+}
+
+.vp-doc figure.lesson-figure {
+    margin-block: 18px 28px;
+    padding: 12px;
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 14px;
+    background: color-mix(in srgb, var(--vp-c-bg-soft) 88%, transparent);
+}
+
+.vp-doc figure.lesson-figure img {
+    width: auto;
+    max-width: 100%;
+    max-height: 560px;
+    object-fit: contain;
+}
+
+.vp-doc figure.lesson-figure video {
+    max-height: 560px;
+    object-fit: contain;
+}
+
+.vp-doc figure.lesson-figure video.lesson-animation {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.vp-doc .lesson-image-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    align-items: stretch;
+}
+
+.vp-doc figure.lesson-figure .lesson-image-row img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    max-height: none;
+    object-fit: cover;
+}
+
+@media (max-width: 640px) {
+    .vp-doc .lesson-image-row {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.vp-doc img.inline-table-image {
+    width: 160px;
+    max-width: 100%;
+    max-height: 95px;
+    object-fit: contain;
+    margin: 0 auto;
 }

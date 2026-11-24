@@ -132,8 +132,143 @@
         "en": "Face Tracking 👨🏻",
         "fa": "ردیابی صورت 👨🏻"
     },
+    "curriculum": {
+        "en": "Curriculum",
+        "fa": "🎓 برنامه آموزشی"
+    },
+    "semester-1-assembly-flight": {
+        "en": "Semester 1: Assembly and Flight",
+        "fa": "ترم اول: ساخت و پرواز"
+    },
+    "01-introduction": {"en": "Session 1: Introduction", "fa": "جلسه ۱: آشنایی با پهپاد"},
+    "01-what-is-a-drone": {"en": "Unit 1: What Is a Drone?", "fa": "بخش ۱: پهپاد چیست؟"},
+    "02-drone-types": {"en": "Unit 2: Drone Types", "fa": "بخش ۲: گونه‌ها"},
+    "03-applications": {"en": "Unit 3: Applications", "fa": "بخش ۳: کاربردها"},
+    "04-robeex": {"en": "Unit 4: RoBeeX", "fa": "بخش ۴: RoBeeX"},
+    "05-regulations": {"en": "Unit 5: Regulations", "fa": "بخش ۵: قوانین"},
+    "06-safety": {"en": "Unit 6: Safety", "fa": "بخش ۶: ایمنی"},
+    "02-flight-mechanics": {"en": "Session 2: Flight Mechanics", "fa": "جلسه ۲: سازوکار پرواز"},
+    "01-multirotor": {"en": "Unit 1: Multirotor", "fa": "بخش ۱: مولتی‌روتور"},
+    "02-motor-layout": {"en": "Unit 2: Motor Layout", "fa": "بخش ۲: چیدمان موتورها"},
+    "03-thrust": {"en": "Unit 3: Thrust", "fa": "بخش ۳: رانش"},
+    "04-motor-mixing": {"en": "Unit 4: Motor Mixing", "fa": "بخش ۴: ترکیب دور"},
+    "05-flight-axes": {"en": "Unit 5: Flight Axes", "fa": "بخش ۵: محورهای پرواز"},
+    "03-sensors-control": {"en": "Session 3: Sensors and Control", "fa": "جلسه ۳: حسگرها و کنترل"},
+    "01-stability": {"en": "Unit 1: Stability", "fa": "بخش ۱: پایداری"},
+    "02-imu": {"en": "Unit 2: IMU", "fa": "بخش ۲: IMU"},
+    "03-altimetry": {"en": "Unit 3: Altimetry", "fa": "بخش ۳: ارتفاع‌سنجی"},
+    "04-optical-flow": {"en": "Unit 4: Optical Flow", "fa": "بخش ۴: Optical Flow"},
+    "05-positioning": {"en": "Unit 5: Positioning", "fa": "بخش ۵: موقعیت‌یابی"},
+    "06-flight-control": {"en": "Unit 6: Flight Control", "fa": "بخش ۶: کنترل پرواز"},
+    "04-hardware-battery": {"en": "Session 4: Hardware", "fa": "جلسه ۴: سخت‌افزار"},
+    "01-motor": {"en": "Unit 1: Motor", "fa": "بخش ۱: موتور"},
+    "02-frame": {"en": "Unit 2: Frame", "fa": "بخش ۲: فریم"},
+    "03-propellers": {"en": "Unit 3: Propellers", "fa": "بخش ۳: ملخ"},
+    "04-battery": {"en": "Unit 4: Battery", "fa": "بخش ۴: باتری"},
+    "05-assembly": {"en": "Session 5: Assembly", "fa": "جلسه ۵: مونتاژ"},
+    "01-assembly": {"en": "Unit 1: Assembly", "fa": "بخش ۱: مونتاژ"},
+    "02-inspection": {"en": "Unit 2: Inspection", "fa": "بخش ۲: بازرسی"},
+    "06-setup": {"en": "Session 6: Setup", "fa": "جلسه ۶: راه‌اندازی"},
+    "01-wireless": {"en": "Unit 1: Wireless Communication", "fa": "بخش ۱: ارتباط بی‌سیم"},
+    "02-application": {"en": "Unit 2: Application", "fa": "بخش ۲: اپلیکیشن"},
+    "03-account": {"en": "Unit 3: Account", "fa": "بخش ۳: حساب کاربری"},
+    "04-activation": {"en": "Unit 4: Activation", "fa": "بخش ۴: فعال‌سازی"},
+    "05-connection": {"en": "Unit 5: Connection", "fa": "بخش ۵: اتصال"},
+    "06-settings": {"en": "Unit 6: Settings", "fa": "بخش ۶: تنظیمات"},
+    "07-calibration": {"en": "Unit 7: Calibration", "fa": "بخش ۷: کالیبراسیون"},
+    "07-basic-flight": {"en": "Session 7: Basic Flight", "fa": "جلسه ۷: پرواز مقدماتی"},
+    "01-manual-control": {"en": "Unit 1: Manual Control", "fa": "بخش ۱: کنترل دستی"},
+    "02-telemetry": {"en": "Unit 2: Telemetry", "fa": "بخش ۲: تله‌متری"},
+    "03-flight-readiness": {"en": "Unit 3: Flight Readiness", "fa": "بخش ۳: آمادگی پرواز"},
+    "04-first-flight": {"en": "Unit 4: First Flight", "fa": "بخش ۴: پرواز نخست"},
+    "05-basic-movements": {"en": "Unit 5: Basic Movements", "fa": "بخش ۵: حرکت پایه"},
+    "08-advanced-flight": {"en": "Session 8: Advanced Flight", "fa": "جلسه ۸: پرواز پیشرفته"},
+    "01-horizontal-paths": {"en": "Unit 1: Horizontal Paths", "fa": "بخش ۱: مسیرهای افقی"},
+    "02-heading": {"en": "Unit 2: Heading", "fa": "بخش ۲: جهت دماغه"},
+    "03-combined-paths": {"en": "Unit 3: Combined Paths", "fa": "بخش ۳: مسیرهای ترکیبی"},
+    "09-applied-flight": {"en": "Session 9: Applied Flight", "fa": "جلسه ۹: پرواز کاربردی"},
+    "01-imaging": {"en": "Unit 1: Imaging", "fa": "بخش ۱: تصویربرداری"},
+    "02-final-mission": {"en": "Unit 2: Final Mission", "fa": "بخش ۲: مأموریت پایانی"},
+    "semester-2-blockly-basics": {
+        "en": "Semester 2: Blockly Basics",
+        "fa": "ترم دوم: مبانی Blockly"
+    },
+    "01-algorithm-safety": { "en": "Algorithms and Safety", "fa": "۱. از فرمان دستی تا الگوریتم" },
+    "02-blockly-workspace": { "en": "Blockly Workspace", "fa": "۲. محیط Blockly" },
+    "03-sequence-timing-lights": { "en": "Sequence, Timing and Lights", "fa": "۳. ترتیب، زمان‌بندی و چراغ‌ها" },
+    "04-flight-blocks": { "en": "Flight Blocks", "fa": "۴. بلوک‌های پروازی" },
+    "05-square-mission": { "en": "Square Mission", "fa": "۵. مأموریت مربع" },
+    "06-yaw-parameters": { "en": "Yaw and Parameters", "fa": "۶. پارامترها و Yaw" },
+    "07-loops-patterns": { "en": "Loops and Patterns", "fa": "۷. حلقه‌ها و الگوها" },
+    "08-sensors-conditions": { "en": "Sensors and Conditions", "fa": "۸. حسگرها و شرط‌ها" },
+    "09-debugging-team-mission": { "en": "Debugging Team Mission", "fa": "۹. اشکال‌زدایی و مأموریت تیمی" },
+    "10-final-blockly-project": { "en": "Final Blockly Project", "fa": "۱۰. پروژه پایانی Blockly" },
     "bull-fighting": {
         "en": "Bull Fighting 🐂",
         "fa": "گاو بازی 🐂"
+    },
+    "coordinate-flight": {
+        "en": "XYZ and Relative Flight",
+        "fa": "مختصات XYZ و حرکت نسبی"
+    },
+    "absolute-relative-flight": {
+        "en": "Absolute vs Relative Flight",
+        "fa": "پرواز مطلق و نسبی"
+    },
+    "move-and-turn": {
+        "en": "Move and Turn Together",
+        "fa": "حرکت و چرخش هم‌زمان"
+    },
+    "regular-polygon": {
+        "en": "Draw a Regular Polygon",
+        "fa": "رسم چندضلعی منتظم"
+    },
+    "circle-yaw": {
+        "en": "Circle with Yaw Steps",
+        "fa": "دایره با تغییر Yaw"
+    },
+    "circle-trigonometry": {
+        "en": "Circle with Sine and Cosine",
+        "fa": "دایره با سینوس و کسینوس"
+    },
+    "saved-waypoints": {
+        "en": "Fly a List of Waypoints",
+        "fa": "پرواز با فهرست موقعیت‌ها"
+    },
+    "digital-level": {
+        "en": "Calibrated Digital Level",
+        "fa": "تراز دیجیتال با کالیبراسیون"
+    },
+    "digital-altimeter": {
+        "en": "Digital Altimeter",
+        "fa": "ارتفاع‌سنج دیجیتال"
+    },
+    "tilt-corrected-altimeter": {
+        "en": "Tilt-Corrected Altimeter",
+        "fa": "ارتفاع‌سنج با جبران شیب"
+    },
+    "pipeline-inspection": {
+        "en": "Pipeline Inspection Route",
+        "fa": "بازرسی مسیر خط لوله"
+    },
+    "firefighting-floors": {
+        "en": "Firefighting Floor Patrol",
+        "fa": "آتش‌نشان و پیمایش طبقه‌ها"
+    },
+    "face-detection-led": {
+        "en": "Face Detection Lights",
+        "fa": "تشخیص چهره و تغییر LED"
+    },
+    "face-direction-led": {
+        "en": "Face Direction Lights",
+        "fa": "تشخیص راست و چپ چهره"
+    },
+    "face-triggered-flight": {
+        "en": "Face-Triggered Forward Flight",
+        "fa": "حرکت رو به جلو با تشخیص چهره"
+    },
+    "face-following-yaw": {
+        "en": "Follow a Face with Yaw",
+        "fa": "دنبال کردن چهره با Yaw"
     }
 }

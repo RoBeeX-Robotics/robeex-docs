@@ -4,10 +4,18 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@miletorix/vitepress-image-viewer@1.3.5':
+    hash: f3cf83da60913b110cb361ebe272c1d637eecba55200013fa59173fbd9ba5633
+    path: patches/@miletorix__vitepress-image-viewer@1.3.5.patch
+
 importers:
 
   .:
     dependencies:
+      '@miletorix/vitepress-image-viewer':
+        specifier: ^1.3.5
+        version: 1.3.5(patch_hash=f3cf83da60913b110cb361ebe272c1d637eecba55200013fa59173fbd9ba5633)(vue@3.5.38(typescript@5.9.3))
       vazirmatn:
         specifier: ^33.0.3
         version: 33.0.3
@@ -363,6 +371,11 @@ packages:
 
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
+
+  '@miletorix/vitepress-image-viewer@1.3.5':
+    resolution: {integrity: sha512-n9cFho8hnk3V0kuA0JLiIxW3FKmZ6HjMKNwFDHNfLooIiug7Wb70zy2TKaITZz67BA1WTyhthbq1fznXzNRJCQ==}
+    peerDependencies:
+      vue: ^3.5.41
 
   '@rollup/rollup-android-arm-eabi@4.62.2':
     resolution: {integrity: sha512-6o7ZLZK+BeenkZCFNDXqpbjw9bD6nuWonvS/lwQJp7NoVVxm6p3qE7qQ5jGuBjiFsgvqjD8mZAU5oWxTmbOeOg==}
@@ -2187,6 +2200,10 @@ snapshots:
   '@iconify/types@2.0.0': {}
 
   '@jridgewell/sourcemap-codec@1.5.5': {}
+
+  '@miletorix/vitepress-image-viewer@1.3.5(patch_hash=f3cf83da60913b110cb361ebe272c1d637eecba55200013fa59173fbd9ba5633)(vue@3.5.38(typescript@5.9.3))':
+    dependencies:
+      vue: 3.5.38(typescript@5.9.3)
 
   '@rollup/rollup-android-arm-eabi@4.62.2':
     optional: true

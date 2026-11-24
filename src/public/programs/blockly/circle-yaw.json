@@ -1,0 +1,87 @@
+{
+  "blocks": {
+    "blocks": [
+      {
+        "id": "fnN@%#Zx%dX%pP`iW!/J",
+        "next": {
+          "block": {
+            "id": "?*}M/zVF:/?eDg~1wD:K",
+            "inputs": {
+              "CODE": {
+                "block": {
+                  "id": "f`Fj=r~b#^lX]K.5a!va",
+                  "inputs": {
+                    "DO": {
+                      "block": {
+                        "id": "6cFgTpDRE+9ev)Y)O!IJ",
+                        "inputs": {
+                          "DISTANCE": {
+                            "block": {
+                              "fields": {
+                                "NUM": 26
+                              },
+                              "id": "PI(9eZ+4g`UO}s!djf`;",
+                              "type": "math_number"
+                            }
+                          }
+                        },
+                        "next": {
+                          "block": {
+                            "id": "i)EvLXAB~Q?NJzi#Z#J?",
+                            "inputs": {
+                              "DEG": {
+                                "block": {
+                                  "fields": {
+                                    "NUM": 30
+                                  },
+                                  "id": "L=?l`!F;^JmDRVW7~eE|",
+                                  "type": "math_number"
+                                }
+                              }
+                            },
+                            "type": "turn_cw"
+                          }
+                        },
+                        "type": "move_forward"
+                      }
+                    },
+                    "TIMES": {
+                      "block": {
+                        "fields": {
+                          "NUM": 12
+                        },
+                        "id": "@`[;zE!-X9TRKt%-}|~Y",
+                        "type": "math_number"
+                      }
+                    }
+                  },
+                  "next": {
+                    "block": {
+                      "id": ":_VLa6brtq7t/^tXOH?/",
+                      "type": "go_to_home"
+                    }
+                  },
+                  "type": "controls_repeat_ext"
+                }
+              },
+              "HEIGHT": {
+                "block": {
+                  "fields": {
+                    "NUM": 80
+                  },
+                  "id": ";aBRqf`;So5KM*|smA?J",
+                  "type": "math_number"
+                }
+              }
+            },
+            "type": "flight"
+          }
+        },
+        "type": "event_on_play_clicked",
+        "x": 30,
+        "y": 30
+      }
+    ],
+    "languageVersion": 0
+  }
+}

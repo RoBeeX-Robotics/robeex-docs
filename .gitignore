@@ -67,8 +67,3 @@ testem.log
 .DS_Store
 Thumbs.db
 
-# Build Version Env
-/src/environments/version.prod.ts
-/src/environments/version.info.json
-
-.vitepress/cache

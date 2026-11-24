@@ -1,0 +1,232 @@
+{
+  "blocks": {
+    "blocks": [
+      {
+        "id": "5z}hvo!CJ~$R!)g?JG~A",
+        "next": {
+          "block": {
+            "fields": {
+              "VAR": {
+                "id": "radiusCm"
+              }
+            },
+            "id": "gz4]7!f]K%,w.,X=[_L;",
+            "inputs": {
+              "VALUE": {
+                "block": {
+                  "fields": {
+                    "NUM": 50
+                  },
+                  "id": "|p:GRWA*/|JFbIZd]tv+",
+                  "type": "math_number"
+                }
+              }
+            },
+            "next": {
+              "block": {
+                "id": "AcPCP5u|ko9Jt9fiWyrJ",
+                "inputs": {
+                  "CODE": {
+                    "block": {
+                      "id": "^Qpdi8[N%v8h{Q}p26K8",
+                      "inputs": {
+                        "X": {
+                          "block": {
+                            "fields": {
+                              "VAR": {
+                                "id": "radiusCm"
+                              }
+                            },
+                            "id": "PI!YA!|b0gq_nNc!hB1a",
+                            "type": "variables_get"
+                          }
+                        },
+                        "Y": {
+                          "block": {
+                            "fields": {
+                              "NUM": 0
+                            },
+                            "id": "dh*+xO_PZ9GfhTo`bi%y",
+                            "type": "math_number"
+                          }
+                        }
+                      },
+                      "next": {
+                        "block": {
+                          "fields": {
+                            "VAR": {
+                              "id": "angle"
+                            }
+                          },
+                          "id": "HFlfc}+*S!OR_)Ji~N2g",
+                          "inputs": {
+                            "BY": {
+                              "block": {
+                                "fields": {
+                                  "NUM": 30
+                                },
+                                "id": "w#kPS=LbP*UFvev(lQZT",
+                                "type": "math_number"
+                              }
+                            },
+                            "DO": {
+                              "block": {
+                                "id": "2)i+v,T{NRMS7VPTx|tR",
+                                "inputs": {
+                                  "X": {
+                                    "block": {
+                                      "fields": {
+                                        "OP": "MULTIPLY"
+                                      },
+                                      "id": "ZRx#=lIG6u3ILEBI2a3Z",
+                                      "inputs": {
+                                        "A": {
+                                          "block": {
+                                            "fields": {
+                                              "VAR": {
+                                                "id": "radiusCm"
+                                              }
+                                            },
+                                            "id": "oXI]=VGj!pI3uHyjh*o+",
+                                            "type": "variables_get"
+                                          }
+                                        },
+                                        "B": {
+                                          "block": {
+                                            "fields": {
+                                              "OP": "COS"
+                                            },
+                                            "id": "h(,sujui)#@UO~!]P2BS",
+                                            "inputs": {
+                                              "NUM": {
+                                                "block": {
+                                                  "fields": {
+                                                    "VAR": {
+                                                      "id": "angle"
+                                                    }
+                                                  },
+                                                  "id": "fhHDET@8UqD~eR|%9Gyv",
+                                                  "type": "variables_get"
+                                                }
+                                              }
+                                            },
+                                            "type": "math_trig"
+                                          }
+                                        }
+                                      },
+                                      "type": "math_arithmetic"
+                                    }
+                                  },
+                                  "Y": {
+                                    "block": {
+                                      "fields": {
+                                        "OP": "MULTIPLY"
+                                      },
+                                      "id": "t7iy]fPq#U(r,{TUh-7{",
+                                      "inputs": {
+                                        "A": {
+                                          "block": {
+                                            "fields": {
+                                              "VAR": {
+                                                "id": "radiusCm"
+                                              }
+                                            },
+                                            "id": "4ESU]T[Gf+j;mUGY93.@",
+                                            "type": "variables_get"
+                                          }
+                                        },
+                                        "B": {
+                                          "block": {
+                                            "fields": {
+                                              "OP": "SIN"
+                                            },
+                                            "id": "Ai_*VaY585]b^:KQ9gI}",
+                                            "inputs": {
+                                              "NUM": {
+                                                "block": {
+                                                  "fields": {
+                                                    "VAR": {
+                                                      "id": "angle"
+                                                    }
+                                                  },
+                                                  "id": "s#%tc~!/_dmkfeHbcFb7",
+                                                  "type": "variables_get"
+                                                }
+                                              }
+                                            },
+                                            "type": "math_trig"
+                                          }
+                                        }
+                                      },
+                                      "type": "math_arithmetic"
+                                    }
+                                  }
+                                },
+                                "type": "set_pos_var"
+                              }
+                            },
+                            "FROM": {
+                              "block": {
+                                "fields": {
+                                  "NUM": 30
+                                },
+                                "id": "o7w]kAj*j_fL;Xheh)[P",
+                                "type": "math_number"
+                              }
+                            },
+                            "TO": {
+                              "block": {
+                                "fields": {
+                                  "NUM": 360
+                                },
+                                "id": "AjZ1K%]`h`yJ7)fgFon6",
+                                "type": "math_number"
+                              }
+                            }
+                          },
+                          "next": {
+                            "block": {
+                              "id": "WPa(BLKGo]8Z#[HpSFnc",
+                              "type": "go_to_home"
+                            }
+                          },
+                          "type": "controls_for"
+                        }
+                      },
+                      "type": "set_pos_var"
+                    }
+                  },
+                  "HEIGHT": {
+                    "block": {
+                      "fields": {
+                        "NUM": 80
+                      },
+                      "id": "t-Z+Pj8{zB~L}Lsxi8iA",
+                      "type": "math_number"
+                    }
+                  }
+                },
+                "type": "flight"
+              }
+            },
+            "type": "variables_set"
+          }
+        },
+        "type": "event_on_play_clicked",
+        "x": 30,
+        "y": 30
+      }
+    ],
+    "languageVersion": 0
+  },
+  "variables": [
+    {
+      "id": "radiusCm",
+      "name": "radiusCm"
+    },
+    {
+      "id": "angle",
+      "name": "angle"
+    }
+  ]
+}

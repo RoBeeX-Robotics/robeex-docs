@@ -1,0 +1,375 @@
+{
+  "blocks": {
+    "blocks": [
+      {
+        "id": ".VlPA@:%U!57WDa3Ac+w",
+        "next": {
+          "block": {
+            "fields": {
+              "VAR": {
+                "id": "waypoints"
+              }
+            },
+            "id": "o7ZnQ@dDst/Gf}`s2nF2",
+            "inputs": {
+              "VALUE": {
+                "block": {
+                  "extraState": {
+                    "itemCount": 4
+                  },
+                  "id": "ta7L4a|+RbQ,}iggVoCp",
+                  "inputs": {
+                    "ADD0": {
+                      "block": {
+                        "extraState": {
+                          "itemCount": 3
+                        },
+                        "id": "fsoXhDPoNF.ixl09dZT0",
+                        "inputs": {
+                          "ADD0": {
+                            "block": {
+                              "fields": {
+                                "NUM": 0
+                              },
+                              "id": "aFpif[F+y7Lr=4J*]u5q",
+                              "type": "math_number"
+                            }
+                          },
+                          "ADD1": {
+                            "block": {
+                              "fields": {
+                                "NUM": 0
+                              },
+                              "id": "Lm1ot@?Xk~pfgqAIV(F7",
+                              "type": "math_number"
+                            }
+                          },
+                          "ADD2": {
+                            "block": {
+                              "fields": {
+                                "NUM": 80
+                              },
+                              "id": "26Gd[X*YXGHetIrjS_~N",
+                              "type": "math_number"
+                            }
+                          }
+                        },
+                        "type": "lists_create_with"
+                      }
+                    },
+                    "ADD1": {
+                      "block": {
+                        "extraState": {
+                          "itemCount": 3
+                        },
+                        "id": "1|;T6~j@r.s=mA2y9bO;",
+                        "inputs": {
+                          "ADD0": {
+                            "block": {
+                              "fields": {
+                                "NUM": 60
+                              },
+                              "id": "_YXpp@Cq:~7$Dx!%*.,Y",
+                              "type": "math_number"
+                            }
+                          },
+                          "ADD1": {
+                            "block": {
+                              "fields": {
+                                "NUM": 0
+                              },
+                              "id": "G2$yMTw1A$QL:{UXNF1H",
+                              "type": "math_number"
+                            }
+                          },
+                          "ADD2": {
+                            "block": {
+                              "fields": {
+                                "NUM": 80
+                              },
+                              "id": "e}Gu1*f}ueL-v^J_{(.C",
+                              "type": "math_number"
+                            }
+                          }
+                        },
+                        "type": "lists_create_with"
+                      }
+                    },
+                    "ADD2": {
+                      "block": {
+                        "extraState": {
+                          "itemCount": 3
+                        },
+                        "id": "0=-P1P_mwF?-~AUKHN6]",
+                        "inputs": {
+                          "ADD0": {
+                            "block": {
+                              "fields": {
+                                "NUM": 60
+                              },
+                              "id": "||*1Qm-|r{ya!rJ-~}.M",
+                              "type": "math_number"
+                            }
+                          },
+                          "ADD1": {
+                            "block": {
+                              "fields": {
+                                "NUM": 60
+                              },
+                              "id": "-/+oQg~:L4ow9B`P)vt=",
+                              "type": "math_number"
+                            }
+                          },
+                          "ADD2": {
+                            "block": {
+                              "fields": {
+                                "NUM": 100
+                              },
+                              "id": "!7Bi{@h94pFa~pA`h5C%",
+                              "type": "math_number"
+                            }
+                          }
+                        },
+                        "type": "lists_create_with"
+                      }
+                    },
+                    "ADD3": {
+                      "block": {
+                        "extraState": {
+                          "itemCount": 3
+                        },
+                        "id": "j~m;y*gP.*ALo!hQRF`J",
+                        "inputs": {
+                          "ADD0": {
+                            "block": {
+                              "fields": {
+                                "NUM": 0
+                              },
+                              "id": "rj{MS${6PVS=5mzHpng|",
+                              "type": "math_number"
+                            }
+                          },
+                          "ADD1": {
+                            "block": {
+                              "fields": {
+                                "NUM": 60
+                              },
+                              "id": "_zl/w#a|#FJhAujiMGUQ",
+                              "type": "math_number"
+                            }
+                          },
+                          "ADD2": {
+                            "block": {
+                              "fields": {
+                                "NUM": 80
+                              },
+                              "id": "na:w3m17)X+KBG+HbS?u",
+                              "type": "math_number"
+                            }
+                          }
+                        },
+                        "type": "lists_create_with"
+                      }
+                    }
+                  },
+                  "type": "lists_create_with"
+                }
+              }
+            },
+            "next": {
+              "block": {
+                "id": "GZtu{F_7YK`s4i.]wWDq",
+                "inputs": {
+                  "CODE": {
+                    "block": {
+                      "fields": {
+                        "VAR": {
+                          "id": "point"
+                        }
+                      },
+                      "id": "E3N6}Cn$%|;9k`i(xCAf",
+                      "inputs": {
+                        "DO": {
+                          "block": {
+                            "id": "KsmW^qmHcdov|]KyL9|;",
+                            "inputs": {
+                              "HEIGHT": {
+                                "block": {
+                                  "fields": {
+                                    "MODE": "GET",
+                                    "WHERE": "FROM_START"
+                                  },
+                                  "id": "Qt#Y6YpZEaqhDZG1eP|7",
+                                  "inputs": {
+                                    "AT": {
+                                      "block": {
+                                        "fields": {
+                                          "NUM": 2
+                                        },
+                                        "id": "gBR{zU42+5[F_~dxjVeW",
+                                        "type": "math_number"
+                                      }
+                                    },
+                                    "VALUE": {
+                                      "block": {
+                                        "fields": {
+                                          "VAR": {
+                                            "id": "point"
+                                          }
+                                        },
+                                        "id": "Gz^?:P4^FAba(RP!tu]o",
+                                        "type": "variables_get"
+                                      }
+                                    }
+                                  },
+                                  "type": "lists_getIndex"
+                                }
+                              }
+                            },
+                            "next": {
+                              "block": {
+                                "id": "Y(!ma6nL]aXsf[^/y-B1",
+                                "inputs": {
+                                  "X": {
+                                    "block": {
+                                      "fields": {
+                                        "MODE": "GET",
+                                        "WHERE": "FROM_START"
+                                      },
+                                      "id": "@+I7p]NkPDp]pYU)2aZA",
+                                      "inputs": {
+                                        "AT": {
+                                          "block": {
+                                            "fields": {
+                                              "NUM": 0
+                                            },
+                                            "id": "q)H,y?(ZTMY`hacK9lON",
+                                            "type": "math_number"
+                                          }
+                                        },
+                                        "VALUE": {
+                                          "block": {
+                                            "fields": {
+                                              "VAR": {
+                                                "id": "point"
+                                              }
+                                            },
+                                            "id": "@AP#PLqd,,2E!1*HHia.",
+                                            "type": "variables_get"
+                                          }
+                                        }
+                                      },
+                                      "type": "lists_getIndex"
+                                    }
+                                  },
+                                  "Y": {
+                                    "block": {
+                                      "fields": {
+                                        "MODE": "GET",
+                                        "WHERE": "FROM_START"
+                                      },
+                                      "id": "q1{~~F@76aU*cwqzd|$F",
+                                      "inputs": {
+                                        "AT": {
+                                          "block": {
+                                            "fields": {
+                                              "NUM": 1
+                                            },
+                                            "id": "n}]:ZlXh87OBAjODp27C",
+                                            "type": "math_number"
+                                          }
+                                        },
+                                        "VALUE": {
+                                          "block": {
+                                            "fields": {
+                                              "VAR": {
+                                                "id": "point"
+                                              }
+                                            },
+                                            "id": "s1J;*HJ)hF/S2dw,3m-%",
+                                            "type": "variables_get"
+                                          }
+                                        }
+                                      },
+                                      "type": "lists_getIndex"
+                                    }
+                                  }
+                                },
+                                "next": {
+                                  "block": {
+                                    "id": ",xo7/_-E$fz3[nN*^HV|",
+                                    "inputs": {
+                                      "TIME": {
+                                        "block": {
+                                          "fields": {
+                                            "NUM": 1
+                                          },
+                                          "id": "z[sT|_Sg*)uYBw][s8,B",
+                                          "type": "math_number"
+                                        }
+                                      }
+                                    },
+                                    "type": "sleep_sec"
+                                  }
+                                },
+                                "type": "set_pos_var"
+                              }
+                            },
+                            "type": "set_alt"
+                          }
+                        },
+                        "LIST": {
+                          "block": {
+                            "fields": {
+                              "VAR": {
+                                "id": "waypoints"
+                              }
+                            },
+                            "id": "yin+Az;knI}116*jywXJ",
+                            "type": "variables_get"
+                          }
+                        }
+                      },
+                      "next": {
+                        "block": {
+                          "id": "qOro?k2y2^oCyJ`k}[Jd",
+                          "type": "go_to_home"
+                        }
+                      },
+                      "type": "controls_forEach"
+                    }
+                  },
+                  "HEIGHT": {
+                    "block": {
+                      "fields": {
+                        "NUM": 80
+                      },
+                      "id": "sm-Ar//4}*J6YbCW/8FL",
+                      "type": "math_number"
+                    }
+                  }
+                },
+                "type": "flight"
+              }
+            },
+            "type": "variables_set"
+          }
+        },
+        "type": "event_on_play_clicked",
+        "x": 30,
+        "y": 30
+      }
+    ],
+    "languageVersion": 0
+  },
+  "variables": [
+    {
+      "id": "waypoints",
+      "name": "waypoints"
+    },
+    {
+      "id": "point",
+      "name": "point"
+    }
+  ]
+}

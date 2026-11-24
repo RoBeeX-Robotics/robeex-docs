@@ -1,0 +1,14 @@
+diff --git a/dist/image-viewer.es.js b/dist/image-viewer.es.js
+index 2217a48a1079d8680e90ead52f8e1c9e6616a99c..cbc56c3530617e6da50676a5a9df043bdedaa812 100644
+--- a/dist/image-viewer.es.js
++++ b/dist/image-viewer.es.js
+@@ -77,7 +77,8 @@ var se = { class: "iv-controls" }, ce = { class: "iv-left" }, le = {
+ 		function U(e) {
+ 			let t = document.querySelector("main, article, .content, .vp-doc, .theme-doc, #main"), n = e ?? t ?? document, r = Array.from(n.querySelectorAll("img")).filter((e) => !(!E(e, d.imageRules) || !e.src || e.classList.contains("iv-thumb") || e.naturalWidth > 0 && e.naturalHeight > 0 && e.naturalWidth < 60 && e.naturalHeight < 60)), i = /* @__PURE__ */ new Set(), a = [];
+ 			r.forEach((e) => {
+-				let t = (e.currentSrc || e.src).split("#")[0];
++				// Use the full-size source for zoom and gallery navigation with responsive images.
++				let t = (e.src || e.currentSrc).split("#")[0];
+ 				if (!i.has(t)) {
+ 					i.add(t);
+ 					let n = e.getAttribute("alt") ?? "";

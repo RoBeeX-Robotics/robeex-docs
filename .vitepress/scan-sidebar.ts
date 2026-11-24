@@ -93,6 +93,7 @@ function scanDirectory(
 
     entries.sort((a, b) => {
         if (a.name == INDEX_FILE) return -1;
+        if (b.name == INDEX_FILE) return 1;
 
         if (a.orderPriority !== b.orderPriority) {
             return b.orderPriority - a.orderPriority;

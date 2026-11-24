@@ -1,0 +1,167 @@
+{
+  "blocks": {
+    "blocks": [
+      {
+        "id": "pIpBzellBV^U/M8w@]iU",
+        "next": {
+          "block": {
+            "fields": {
+              "VAR": {
+                "id": "sides"
+              }
+            },
+            "id": "a4|F#xB+H[BM}%@krs=g",
+            "inputs": {
+              "VALUE": {
+                "block": {
+                  "fields": {
+                    "NUM": 4
+                  },
+                  "id": "w=n1j^di?TKA/MZvGThn",
+                  "type": "math_number"
+                }
+              }
+            },
+            "next": {
+              "block": {
+                "fields": {
+                  "VAR": {
+                    "id": "sideCm"
+                  }
+                },
+                "id": "SiE:pzf=P7/ohfqw2aey",
+                "inputs": {
+                  "VALUE": {
+                    "block": {
+                      "fields": {
+                        "NUM": 60
+                      },
+                      "id": "X9)tNH31R7PhOx;Nendh",
+                      "type": "math_number"
+                    }
+                  }
+                },
+                "next": {
+                  "block": {
+                    "id": "N#S~^.RB~}_dm3fjT8~E",
+                    "inputs": {
+                      "CODE": {
+                        "block": {
+                          "id": "NWHmTIpL%kfWT7@JetS4",
+                          "inputs": {
+                            "DO": {
+                              "block": {
+                                "id": "90tpu0[38Dmj-lx?-_LW",
+                                "inputs": {
+                                  "DISTANCE": {
+                                    "block": {
+                                      "fields": {
+                                        "VAR": {
+                                          "id": "sideCm"
+                                        }
+                                      },
+                                      "id": "V2b7oUYZG%E@/j#sL|.=",
+                                      "type": "variables_get"
+                                    }
+                                  }
+                                },
+                                "next": {
+                                  "block": {
+                                    "id": "ydW_-BV;.B};/h.{llR*",
+                                    "inputs": {
+                                      "DEG": {
+                                        "block": {
+                                          "fields": {
+                                            "OP": "DIVIDE"
+                                          },
+                                          "id": "K(wVfGn@O@yV7I(]nbFf",
+                                          "inputs": {
+                                            "A": {
+                                              "block": {
+                                                "fields": {
+                                                  "NUM": 360
+                                                },
+                                                "id": ":FUrhf{BJ?@~E@vGR=|b",
+                                                "type": "math_number"
+                                              }
+                                            },
+                                            "B": {
+                                              "block": {
+                                                "fields": {
+                                                  "VAR": {
+                                                    "id": "sides"
+                                                  }
+                                                },
+                                                "id": "O^bI](hBJFj[8aq8)TZ2",
+                                                "type": "variables_get"
+                                              }
+                                            }
+                                          },
+                                          "type": "math_arithmetic"
+                                        }
+                                      }
+                                    },
+                                    "type": "turn_cw"
+                                  }
+                                },
+                                "type": "move_forward"
+                              }
+                            },
+                            "TIMES": {
+                              "block": {
+                                "fields": {
+                                  "VAR": {
+                                    "id": "sides"
+                                  }
+                                },
+                                "id": "aJLvuw|ANk#0TyYM=lcn",
+                                "type": "variables_get"
+                              }
+                            }
+                          },
+                          "next": {
+                            "block": {
+                              "id": "e2%oaUNSR!/8pFM^vf`o",
+                              "type": "go_to_home"
+                            }
+                          },
+                          "type": "controls_repeat_ext"
+                        }
+                      },
+                      "HEIGHT": {
+                        "block": {
+                          "fields": {
+                            "NUM": 80
+                          },
+                          "id": "EV0WO,N$5{4GU{b^1x6x",
+                          "type": "math_number"
+                        }
+                      }
+                    },
+                    "type": "flight"
+                  }
+                },
+                "type": "variables_set"
+              }
+            },
+            "type": "variables_set"
+          }
+        },
+        "type": "event_on_play_clicked",
+        "x": 30,
+        "y": 30
+      }
+    ],
+    "languageVersion": 0
+  },
+  "variables": [
+    {
+      "id": "sides",
+      "name": "sides"
+    },
+    {
+      "id": "sideCm",
+      "name": "sideCm"
+    }
+  ]
+}

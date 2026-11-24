@@ -1,0 +1,228 @@
+{
+  "blocks": {
+    "blocks": [
+      {
+        "id": "3H$kqW3XOxUc7lCG_[Z+",
+        "next": {
+          "block": {
+            "fields": {
+              "MODE": "MANUAL"
+            },
+            "id": "*8rkFC3r2frH;bItL*`j",
+            "next": {
+              "block": {
+                "id": "imbvzV[%?CEjm1A:;[Mb",
+                "next": {
+                  "block": {
+                    "id": "|4%|B04t?c~)U9.e;Yi3",
+                    "inputs": {
+                      "CODE": {
+                        "block": {
+                          "fields": {
+                            "VAR": {
+                              "id": "image"
+                            }
+                          },
+                          "id": "#JrT8w!}SYJu`m_`oOCw",
+                          "inputs": {
+                            "VALUE": {
+                              "block": {
+                                "id": "}_-PAuzU~AF~.jjUsT!%",
+                                "type": "get_next_frame"
+                              }
+                            }
+                          },
+                          "next": {
+                            "block": {
+                              "fields": {
+                                "VAR": {
+                                  "id": "faces"
+                                }
+                              },
+                              "id": ";SD6kYeT`C2uiXD-H7tD",
+                              "inputs": {
+                                "VALUE": {
+                                  "block": {
+                                    "id": "(/Cz5DG=D^P1OQwz,,o3",
+                                    "inputs": {
+                                      "TEST": {
+                                        "block": {
+                                          "fields": {
+                                            "VAR": {
+                                              "id": "image"
+                                            }
+                                          },
+                                          "id": ".JReoPYt}Vu(lIU8826P",
+                                          "type": "variables_get"
+                                        }
+                                      }
+                                    },
+                                    "type": "detect_face"
+                                  }
+                                }
+                              },
+                              "next": {
+                                "block": {
+                                  "id": "@)!V[3ToE`!XJ6B*u%)a",
+                                  "inputs": {
+                                    "BB": {
+                                      "block": {
+                                        "fields": {
+                                          "VAR": {
+                                            "id": "faces"
+                                          }
+                                        },
+                                        "id": "0g/5~s8BrIYSCCW%!8U1",
+                                        "type": "variables_get"
+                                      }
+                                    },
+                                    "IMG": {
+                                      "block": {
+                                        "fields": {
+                                          "VAR": {
+                                            "id": "image"
+                                          }
+                                        },
+                                        "id": "hQ63y$9x^n1LGs|j%gVq",
+                                        "type": "variables_get"
+                                      }
+                                    }
+                                  },
+                                  "next": {
+                                    "block": {
+                                      "extraState": {
+                                        "hasElse": true
+                                      },
+                                      "id": "P5~yE_[BK)eC4=|8N)=+",
+                                      "inputs": {
+                                        "DO0": {
+                                          "block": {
+                                            "id": "p6u$w~t9IrQOOqusOT]w",
+                                            "inputs": {
+                                              "COLOR": {
+                                                "block": {
+                                                  "fields": {
+                                                    "COLOUR": "#00ff00"
+                                                  },
+                                                  "id": "SC?#_eZgSpdz/|$$;cP@",
+                                                  "type": "colour_picker"
+                                                }
+                                              }
+                                            },
+                                            "type": "set_rgb_led_color"
+                                          }
+                                        },
+                                        "ELSE": {
+                                          "block": {
+                                            "id": "S5BwUEgn0{SMYW*9qM$I",
+                                            "inputs": {
+                                              "COLOR": {
+                                                "block": {
+                                                  "fields": {
+                                                    "COLOUR": "#ff0000"
+                                                  },
+                                                  "id": "I$[l=.KzUd1%UpAvVYo2",
+                                                  "type": "colour_picker"
+                                                }
+                                              }
+                                            },
+                                            "type": "set_rgb_led_color"
+                                          }
+                                        },
+                                        "IF0": {
+                                          "block": {
+                                            "fields": {
+                                              "OP": "GT"
+                                            },
+                                            "id": "+w@u@3~{{-X9OV4}P+pY",
+                                            "inputs": {
+                                              "A": {
+                                                "block": {
+                                                  "id": "@B=9Dr*M@47$ltMQlX5U",
+                                                  "inputs": {
+                                                    "VALUE": {
+                                                      "block": {
+                                                        "fields": {
+                                                          "VAR": {
+                                                            "id": "faces"
+                                                          }
+                                                        },
+                                                        "id": "j+t4b9l*T,W]v48{mNS#",
+                                                        "type": "variables_get"
+                                                      }
+                                                    }
+                                                  },
+                                                  "type": "lists_length"
+                                                }
+                                              },
+                                              "B": {
+                                                "block": {
+                                                  "fields": {
+                                                    "NUM": 0
+                                                  },
+                                                  "id": "7}CHamAu1b?fxYQ^a#ez",
+                                                  "type": "math_number"
+                                                }
+                                              }
+                                            },
+                                            "type": "logic_compare"
+                                          }
+                                        }
+                                      },
+                                      "next": {
+                                        "block": {
+                                          "id": "?u,mnAfjFr(Hcd|8#1dq",
+                                          "inputs": {
+                                            "TIME": {
+                                              "block": {
+                                                "fields": {
+                                                  "NUM": 0.1
+                                                },
+                                                "id": "?/N%i713XQOzYGqMP0Ol",
+                                                "type": "math_number"
+                                              }
+                                            }
+                                          },
+                                          "type": "sleep_sec"
+                                        }
+                                      },
+                                      "type": "controls_if"
+                                    }
+                                  },
+                                  "type": "draw_frame_with_bounding_boxes"
+                                }
+                              },
+                              "type": "variables_set"
+                            }
+                          },
+                          "type": "variables_set"
+                        }
+                      }
+                    },
+                    "type": "main_task"
+                  }
+                },
+                "type": "start_camera"
+              }
+            },
+            "type": "set_rgb_led_mode"
+          }
+        },
+        "type": "event_on_play_clicked",
+        "x": 30,
+        "y": 30
+      }
+    ],
+    "languageVersion": 0
+  },
+  "variables": [
+    {
+      "id": "image",
+      "name": "image"
+    },
+    {
+      "id": "faces",
+      "name": "faces"
+    }
+  ]
+}

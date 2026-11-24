@@ -1,0 +1,112 @@
+{
+  "blocks": {
+    "blocks": [
+      {
+        "id": "PcB!nW,_`=o2`x|OFw@T",
+        "next": {
+          "block": {
+            "id": "LI~Dyq=I*/e{aE8#i,4Z",
+            "inputs": {
+              "CODE": {
+                "block": {
+                  "id": "Nm/sD*I%{wHXVeX;`Y@]",
+                  "inputs": {
+                    "CODE": {
+                      "block": {
+                        "id": "I.#xCn8/%4oYgRn%UBxS",
+                        "inputs": {
+                          "DISTANCE": {
+                            "block": {
+                              "fields": {
+                                "NUM": 60
+                              },
+                              "id": "}#ne}cEO@gLJn}uz.P{P",
+                              "type": "math_number"
+                            }
+                          }
+                        },
+                        "next": {
+                          "block": {
+                            "id": "9ulwYd4}Sa+XqI8TJu}5",
+                            "inputs": {
+                              "DEG": {
+                                "block": {
+                                  "fields": {
+                                    "NUM": 90
+                                  },
+                                  "id": "+6ij7MRk`,j7@GsJv{lI",
+                                  "type": "math_number"
+                                }
+                              }
+                            },
+                            "next": {
+                              "block": {
+                                "id": "x?:0kL/:vdLkbO-Q$s^P",
+                                "inputs": {
+                                  "TIME": {
+                                    "block": {
+                                      "fields": {
+                                        "NUM": 3
+                                      },
+                                      "id": "}.n4KrJnRK2nR_iah8G~",
+                                      "type": "math_number"
+                                    }
+                                  }
+                                },
+                                "type": "sleep_sec"
+                              }
+                            },
+                            "type": "turn_cw"
+                          }
+                        },
+                        "type": "move_forward"
+                      }
+                    }
+                  },
+                  "next": {
+                    "block": {
+                      "id": "nn[:+?IBtoqS@T;rX)jB",
+                      "inputs": {
+                        "TIME": {
+                          "block": {
+                            "fields": {
+                              "NUM": 1
+                            },
+                            "id": "f2;Kkr8u!FxF0h]%gMd^",
+                            "type": "math_number"
+                          }
+                        }
+                      },
+                      "next": {
+                        "block": {
+                          "id": "!^4!Fuw1my*TU-)i^}{3",
+                          "type": "go_to_home"
+                        }
+                      },
+                      "type": "sleep_sec"
+                    }
+                  },
+                  "type": "skip_wait_until_done"
+                }
+              },
+              "HEIGHT": {
+                "block": {
+                  "fields": {
+                    "NUM": 80
+                  },
+                  "id": "P,$WqS5HRcQl%X3IM/Y`",
+                  "type": "math_number"
+                }
+              }
+            },
+            "type": "flight"
+          }
+        },
+        "type": "event_on_play_clicked",
+        "x": 30,
+        "y": 30
+      }
+    ],
+    "languageVersion": 0
+  }
+}

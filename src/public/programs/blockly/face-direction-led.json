@@ -1,0 +1,489 @@
+{
+  "blocks": {
+    "blocks": [
+      {
+        "id": "OnNBl;C=R0]l.J1+h4*q",
+        "next": {
+          "block": {
+            "fields": {
+              "MODE": "MANUAL"
+            },
+            "id": "/`$I9=r_z7xLG?650c0S",
+            "next": {
+              "block": {
+                "id": ",DU0)fjOQJ[!yQVk};BY",
+                "next": {
+                  "block": {
+                    "id": "Id;aY40M*f7,fe,.*Re:",
+                    "inputs": {
+                      "CODE": {
+                        "block": {
+                          "fields": {
+                            "VAR": {
+                              "id": "image"
+                            }
+                          },
+                          "id": "G2._mMIysQP,tOG,P7)?",
+                          "inputs": {
+                            "VALUE": {
+                              "block": {
+                                "id": "r9$C-NxiL_dsWWDT{{sY",
+                                "type": "get_next_frame"
+                              }
+                            }
+                          },
+                          "next": {
+                            "block": {
+                              "fields": {
+                                "VAR": {
+                                  "id": "faces"
+                                }
+                              },
+                              "id": "b.7vjne#^,(e+op#9gMq",
+                              "inputs": {
+                                "VALUE": {
+                                  "block": {
+                                    "id": "5|QSfXdE1c[:U)A(D:zK",
+                                    "inputs": {
+                                      "TEST": {
+                                        "block": {
+                                          "fields": {
+                                            "VAR": {
+                                              "id": "image"
+                                            }
+                                          },
+                                          "id": "W]4DA:^c`Ve*^{6jAVD{",
+                                          "type": "variables_get"
+                                        }
+                                      }
+                                    },
+                                    "type": "detect_face"
+                                  }
+                                }
+                              },
+                              "next": {
+                                "block": {
+                                  "id": "GH?|ZG2=!7Y/E[vXS2Mv",
+                                  "inputs": {
+                                    "BB": {
+                                      "block": {
+                                        "fields": {
+                                          "VAR": {
+                                            "id": "faces"
+                                          }
+                                        },
+                                        "id": "PKWEX{|N*=yyK*b[fg!d",
+                                        "type": "variables_get"
+                                      }
+                                    },
+                                    "IMG": {
+                                      "block": {
+                                        "fields": {
+                                          "VAR": {
+                                            "id": "image"
+                                          }
+                                        },
+                                        "id": "Rx=(t3w?((Onbbw7?-Uv",
+                                        "type": "variables_get"
+                                      }
+                                    }
+                                  },
+                                  "next": {
+                                    "block": {
+                                      "extraState": {
+                                        "hasElse": true
+                                      },
+                                      "id": "T*qUvJN7)qrrj)4}).yP",
+                                      "inputs": {
+                                        "DO0": {
+                                          "block": {
+                                            "fields": {
+                                              "VAR": {
+                                                "id": "faceX"
+                                              }
+                                            },
+                                            "id": "^njF6-J6nXZk^i^S4`45",
+                                            "inputs": {
+                                              "VALUE": {
+                                                "block": {
+                                                  "fields": {
+                                                    "KEY": "centerX"
+                                                  },
+                                                  "id": "%S)?vxnD[H~RQD~Wp@2A",
+                                                  "inputs": {
+                                                    "BB": {
+                                                      "block": {
+                                                        "fields": {
+                                                          "MODE": "GET",
+                                                          "WHERE": "FROM_START"
+                                                        },
+                                                        "id": "o{^([p#Ysg3YN+39NEu4",
+                                                        "inputs": {
+                                                          "AT": {
+                                                            "block": {
+                                                              "fields": {
+                                                                "NUM": 0
+                                                              },
+                                                              "id": "C])d~qb[`i.t0|HkTb6b",
+                                                              "type": "math_number"
+                                                            }
+                                                          },
+                                                          "VALUE": {
+                                                            "block": {
+                                                              "fields": {
+                                                                "VAR": {
+                                                                  "id": "faces"
+                                                                }
+                                                              },
+                                                              "id": "uaGM3SI6H$G/YlmK%Jlh",
+                                                              "type": "variables_get"
+                                                            }
+                                                          }
+                                                        },
+                                                        "type": "lists_getIndex"
+                                                      }
+                                                    }
+                                                  },
+                                                  "type": "get_bounding_box_prop"
+                                                }
+                                              }
+                                            },
+                                            "next": {
+                                              "block": {
+                                                "fields": {
+                                                  "VAR": {
+                                                    "id": "imageWidth"
+                                                  }
+                                                },
+                                                "id": "7T}W0,E0dn/tw-XI9JNt",
+                                                "inputs": {
+                                                  "VALUE": {
+                                                    "block": {
+                                                      "fields": {
+                                                        "KEY": "width"
+                                                      },
+                                                      "id": "v`edl4tX1P8Ocmn8@c!]",
+                                                      "inputs": {
+                                                        "IMG": {
+                                                          "block": {
+                                                            "fields": {
+                                                              "VAR": {
+                                                                "id": "image"
+                                                              }
+                                                            },
+                                                            "id": "Wx~~rCCZ]/474:X6T:Bi",
+                                                            "type": "variables_get"
+                                                          }
+                                                        }
+                                                      },
+                                                      "type": "get_image_prop"
+                                                    }
+                                                  }
+                                                },
+                                                "next": {
+                                                  "block": {
+                                                    "extraState": {
+                                                      "hasElse": true
+                                                    },
+                                                    "id": "wlXtqTULtcC^bH7t@y#N",
+                                                    "inputs": {
+                                                      "DO0": {
+                                                        "block": {
+                                                          "id": "sz`m)lP01/e^.3o]$h9S",
+                                                          "inputs": {
+                                                            "COLOR": {
+                                                              "block": {
+                                                                "fields": {
+                                                                  "COLOUR": "#0000ff"
+                                                                },
+                                                                "id": "IE{fzy:P,%PWSR]Ls/V%",
+                                                                "type": "colour_picker"
+                                                              }
+                                                            }
+                                                          },
+                                                          "type": "set_rgb_led_color"
+                                                        }
+                                                      },
+                                                      "ELSE": {
+                                                        "block": {
+                                                          "extraState": {
+                                                            "hasElse": true
+                                                          },
+                                                          "id": "6J,*kJ^Wo[!j2^WQ-D05",
+                                                          "inputs": {
+                                                            "DO0": {
+                                                              "block": {
+                                                                "id": "$s}Q`;`iouO7[qI-2K3%",
+                                                                "inputs": {
+                                                                  "COLOR": {
+                                                                    "block": {
+                                                                      "fields": {
+                                                                        "COLOUR": "#ff0000"
+                                                                      },
+                                                                      "id": "+}d+ICr,3ZXTn%IM6;Ov",
+                                                                      "type": "colour_picker"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "type": "set_rgb_led_color"
+                                                              }
+                                                            },
+                                                            "ELSE": {
+                                                              "block": {
+                                                                "id": "WVsS-?j7Z(xw9R7wgnRE",
+                                                                "inputs": {
+                                                                  "COLOR": {
+                                                                    "block": {
+                                                                      "fields": {
+                                                                        "COLOUR": "#00ff00"
+                                                                      },
+                                                                      "id": "!(?|?sc)%rB7pI9Kw~Jo",
+                                                                      "type": "colour_picker"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "type": "set_rgb_led_color"
+                                                              }
+                                                            },
+                                                            "IF0": {
+                                                              "block": {
+                                                                "fields": {
+                                                                  "OP": "GT"
+                                                                },
+                                                                "id": "wVAlrH.e.3jjvOS0{pQb",
+                                                                "inputs": {
+                                                                  "A": {
+                                                                    "block": {
+                                                                      "fields": {
+                                                                        "VAR": {
+                                                                          "id": "faceX"
+                                                                        }
+                                                                      },
+                                                                      "id": "8QbtF@qy!/WtvI?rqbS[",
+                                                                      "type": "variables_get"
+                                                                    }
+                                                                  },
+                                                                  "B": {
+                                                                    "block": {
+                                                                      "fields": {
+                                                                        "OP": "MULTIPLY"
+                                                                      },
+                                                                      "id": "!5hCC6NI6WiOLca}2F`l",
+                                                                      "inputs": {
+                                                                        "A": {
+                                                                          "block": {
+                                                                            "fields": {
+                                                                              "VAR": {
+                                                                                "id": "imageWidth"
+                                                                              }
+                                                                            },
+                                                                            "id": "5eqKjl01lY)*igr|at(h",
+                                                                            "type": "variables_get"
+                                                                          }
+                                                                        },
+                                                                        "B": {
+                                                                          "block": {
+                                                                            "fields": {
+                                                                              "NUM": 0.6
+                                                                            },
+                                                                            "id": "-zLwH!(s!b8rB3Zi%a2y",
+                                                                            "type": "math_number"
+                                                                          }
+                                                                        }
+                                                                      },
+                                                                      "type": "math_arithmetic"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "type": "logic_compare"
+                                                              }
+                                                            }
+                                                          },
+                                                          "type": "controls_if"
+                                                        }
+                                                      },
+                                                      "IF0": {
+                                                        "block": {
+                                                          "fields": {
+                                                            "OP": "LT"
+                                                          },
+                                                          "id": "6|BETmqF-Chwo4ADS{BM",
+                                                          "inputs": {
+                                                            "A": {
+                                                              "block": {
+                                                                "fields": {
+                                                                  "VAR": {
+                                                                    "id": "faceX"
+                                                                  }
+                                                                },
+                                                                "id": "in;UkGB4GR==BjP3BQBy",
+                                                                "type": "variables_get"
+                                                              }
+                                                            },
+                                                            "B": {
+                                                              "block": {
+                                                                "fields": {
+                                                                  "OP": "MULTIPLY"
+                                                                },
+                                                                "id": "A,0W]WAGgmX*k%8!#pk^",
+                                                                "inputs": {
+                                                                  "A": {
+                                                                    "block": {
+                                                                      "fields": {
+                                                                        "VAR": {
+                                                                          "id": "imageWidth"
+                                                                        }
+                                                                      },
+                                                                      "id": "J8;_+`{`c7fHfo.}~,7_",
+                                                                      "type": "variables_get"
+                                                                    }
+                                                                  },
+                                                                  "B": {
+                                                                    "block": {
+                                                                      "fields": {
+                                                                        "NUM": 0.4
+                                                                      },
+                                                                      "id": "}3u$$ShaExd,^r=u5Cim",
+                                                                      "type": "math_number"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "type": "math_arithmetic"
+                                                              }
+                                                            }
+                                                          },
+                                                          "type": "logic_compare"
+                                                        }
+                                                      }
+                                                    },
+                                                    "type": "controls_if"
+                                                  }
+                                                },
+                                                "type": "variables_set"
+                                              }
+                                            },
+                                            "type": "variables_set"
+                                          }
+                                        },
+                                        "ELSE": {
+                                          "block": {
+                                            "id": "X^g~9D%Fy}:4$s/6pzzZ",
+                                            "inputs": {
+                                              "COLOR": {
+                                                "block": {
+                                                  "fields": {
+                                                    "COLOUR": "#000000"
+                                                  },
+                                                  "id": "+=;_{3!2FNoO_D=d/zyK",
+                                                  "type": "colour_picker"
+                                                }
+                                              }
+                                            },
+                                            "type": "set_rgb_led_color"
+                                          }
+                                        },
+                                        "IF0": {
+                                          "block": {
+                                            "fields": {
+                                              "OP": "GT"
+                                            },
+                                            "id": "fk-/X^`b11{2?32++qb}",
+                                            "inputs": {
+                                              "A": {
+                                                "block": {
+                                                  "id": "16DxJke)=.gd3pZ@}0Rd",
+                                                  "inputs": {
+                                                    "VALUE": {
+                                                      "block": {
+                                                        "fields": {
+                                                          "VAR": {
+                                                            "id": "faces"
+                                                          }
+                                                        },
+                                                        "id": "?vj=YIGb%T|%+~5?-5l.",
+                                                        "type": "variables_get"
+                                                      }
+                                                    }
+                                                  },
+                                                  "type": "lists_length"
+                                                }
+                                              },
+                                              "B": {
+                                                "block": {
+                                                  "fields": {
+                                                    "NUM": 0
+                                                  },
+                                                  "id": "S=RG6tR!*#vrSf!NKpGL",
+                                                  "type": "math_number"
+                                                }
+                                              }
+                                            },
+                                            "type": "logic_compare"
+                                          }
+                                        }
+                                      },
+                                      "next": {
+                                        "block": {
+                                          "id": "v]*+P;whlog,(lE%~.Hl",
+                                          "inputs": {
+                                            "TIME": {
+                                              "block": {
+                                                "fields": {
+                                                  "NUM": 0.1
+                                                },
+                                                "id": "Hl_0XuRz)Es5WFyEL(3g",
+                                                "type": "math_number"
+                                              }
+                                            }
+                                          },
+                                          "type": "sleep_sec"
+                                        }
+                                      },
+                                      "type": "controls_if"
+                                    }
+                                  },
+                                  "type": "draw_frame_with_bounding_boxes"
+                                }
+                              },
+                              "type": "variables_set"
+                            }
+                          },
+                          "type": "variables_set"
+                        }
+                      }
+                    },
+                    "type": "main_task"
+                  }
+                },
+                "type": "start_camera"
+              }
+            },
+            "type": "set_rgb_led_mode"
+          }
+        },
+        "type": "event_on_play_clicked",
+        "x": 30,
+        "y": 30
+      }
+    ],
+    "languageVersion": 0
+  },
+  "variables": [
+    {
+      "id": "image",
+      "name": "image"
+    },
+    {
+      "id": "faces",
+      "name": "faces"
+    },
+    {
+      "id": "faceX",
+      "name": "faceX"
+    },
+    {
+      "id": "imageWidth",
+      "name": "imageWidth"
+    }
+  ]
+}

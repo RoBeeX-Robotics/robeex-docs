@@ -114,6 +114,24 @@ This warning is visible only in Teacher mode.
 :::
 ::::
 
+## FAQ questions
+
+Use one `faq` container per question. Answers start collapsed and support Markdown, including lists, tables, and links. Questions can use inline formatting and an optional `{#custom-id}` for a direct link.
+
+**Input**
+
+```md
+::: faq How do I connect to RoBeeX?
+Connect to the drone's **Wi-Fi**, then return to the RoBeeX app.
+:::
+```
+
+**Output**
+
+::: faq How do I connect to RoBeeX?
+Connect to the drone's **Wi-Fi**, then return to the RoBeeX app.
+:::
+
 ## More
 
 Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
